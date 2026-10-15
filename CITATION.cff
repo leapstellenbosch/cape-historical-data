@@ -4,6 +4,15 @@ message: If you use these data, cite the paper(s) for each collection you use (s
 type: dataset
 title: Cape Historical Data Repository
 version: '1.0'
+doi: 10.5281/zenodo.23397436
+date-released: '2026-10-15'
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.23397436
+  description: All versions (resolves to the latest)
+- type: doi
+  value: 10.5281/zenodo.23397437
+  description: Version 1.0
 license: CC-BY-4.0
 repository-code: https://github.com/leapstellenbosch/cape-historical-data
 keywords:

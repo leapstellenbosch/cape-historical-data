@@ -2,6 +2,7 @@
   "profile": "data-package",
   "name": "cape-historical-data",
   "title": "Cape Historical Data Repository",
+  "id": "https://doi.org/10.5281/zenodo.23397436",
   "version": "1.0",
   "description": "Five collections of records on the Cape Colony, 1650-1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University: cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records and the South African Families genealogies (people born up to 1870), and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10). Users must cite the paper(s) for each collection they use (each resource's sources) and this release.",
   "homepage": "https://github.com/leapstellenbosch/cape-historical-data",
@@ -90,7 +91,7 @@
       "organization": "Stellenbosch University"
     }
   ],
-  "created": "2026-10-15T12:25:12Z",
+  "created": "2026-10-15T14:04:11Z",
   "resources": [
     {
       "name": "opgaaf-tax-units",

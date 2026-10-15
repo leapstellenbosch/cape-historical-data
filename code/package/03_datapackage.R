@@ -249,6 +249,7 @@ pkg <- list(
   profile = "data-package",
   name = "cape-historical-data",
   title = "Cape Historical Data Repository",
+  id = paste0("https://doi.org/", cff$doi),
   version = "1.0",
   description = paste(
     "Five collections of records on the Cape Colony, 1650-1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University:",

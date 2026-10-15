@@ -1,5 +1,7 @@
 # Cape Historical Data Repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23397436.svg)](https://doi.org/10.5281/zenodo.23397436)
+
 Five collections of records on the Cape Colony, 1650–1850, released by LEAP
 (Laboratory for the Economics of Africa's Past), Stellenbosch University.
 Data under CC BY 4.0; code under MIT.
@@ -80,7 +82,11 @@ Cite the paper(s) for each collection you use, and this release.
 | Slave emancipation | Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. *Explorations in Economic History*, 81, 101390. doi:[10.1016/j.eeh.2021.101390](https://doi.org/10.1016/j.eeh.2021.101390). |
 
 Release: Fourie, J., Green, E., et al. (2026). *Cape Historical Data
-Repository*, version 1.0. Zenodo. DOI: to follow.
+Repository*, version 1.0. Zenodo.
+doi:[10.5281/zenodo.23397437](https://doi.org/10.5281/zenodo.23397437).
+To cite the repository in general rather than this version, use
+doi:[10.5281/zenodo.23397436](https://doi.org/10.5281/zenodo.23397436),
+which always resolves to the latest version.
 
 BibTeX entries for the six papers are in `references.bib`; GitHub's "Cite
 this repository" button uses `CITATION.cff`.
