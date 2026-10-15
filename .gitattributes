@@ -1,0 +1,3 @@
+# Store every file byte for byte: no line-ending conversion, so that the
+# published MD5 checksums hold on every platform.
+* -text

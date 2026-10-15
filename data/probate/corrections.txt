@@ -1,0 +1,15 @@
+file	from	to	deceased	reason	original_md5
+MOOC8_vol01.xml	all MOOC8/10.* documents			copy of volume 10 (114 documents) removed; identical to MOOC8_vol10.xml	97fce26a3bd7f64a256c9368f23fad5a
+MOOC8_vol03.xml	MOOC8/3.54	MOOC8/3.54a	Pijl, Pieter	two estates numbered 3.54; letters added in file order	b45547c743a90e9704e65345d597a94d
+MOOC8_vol03.xml	MOOC8/3.54	MOOC8/3.54b	Smit, Jan	two estates numbered 3.54; letters added in file order	b45547c743a90e9704e65345d597a94d
+MOOC8_vol06.xml	MOOC8/4.24	MOOC8/6.24	Zeijl, Johanna van	wrong volume number; filed between 6.23 and 6.25	73da320ef2254bc991ef244c769d21c0
+MOOC8_vol07.xml	MOOC8/8.44	MOOC8/7.44	Schelde, Maria van der	wrong volume number; filed between 7.43c and 7.45a	97005ae691b5598ec07c087490a7f2cc
+MOOC8_vol19.xml	MOOC8/20.20	MOOC8/19.20	Sitterd, Andries van	wrong volume number; filed between 19.19 and 19.21	b7a504b336ff24f59b8c3bfe64a0e711
+MOOC8_vol19.xml	MOOC8/10.35	MOOC8/19.35	Wijk, Gerrit van	wrong volume number; filed between 19.34 and 19.36	b7a504b336ff24f59b8c3bfe64a0e711
+MOOC8_vol44.xml	MOOC8/4.14	MOOC8/44.14	Janzen, Johanna Maria	wrong volume number; filed between 44.13 and 44.15	4f8377c4d92fa84c48d335cd73b23aba
+MOOC8_vol56.xml	MOOC8/54.4a	MOOC8/56.4a	Forster, Dorothea Maria	wrong volume number; part a of 56.4 (56.4b follows)	45a5656402e37d40316bb5e3b80d0f3a
+MOOC8_vol59.xml	MOOC8/69.52a	MOOC8/59.52a	Snijman, Jacomina	wrong volume number; part a of 59.52 (59.52b follows)	915d53039e19a68b20a4304eef30ddcc
+MOOC8_vol61.xml	MOOC8/61_no number 01	MOOC8/61_no number 01a	Cloete, Gerrit	two documents of one estate with one reference; letters added in file order	a53bb2b0cf5ec6a4fba5f9d2ace1c2c5
+MOOC8_vol61.xml	MOOC8/61_no number 01	MOOC8/61_no number 01b	Cloete, Gerrit	two documents of one estate with one reference; letters added in file order	a53bb2b0cf5ec6a4fba5f9d2ace1c2c5
+MOOC8_vol71.xml	MOOC8/1.12a	MOOC8/71.12a	Merwe, Johannes Marthinus van der	wrong volume number; part a of 71.12 (71.12b follows)	ab73ff8ab5e63ca06ffbe07407d929bd
+MOOC8_vol73.xml	MOOC8/37.11	MOOC8/73.11	Burger, Barend Hendrik	wrong volume number; filed between 73.10 and 73.12	1088566b06f7250fa4ac27d0228f10d7

@@ -1,0 +1,19 @@
+variable,type,source_column,description
+chdr_id,character,,"Repository identifier, never changed: EMA- and the record's position in the workbook (EMA-00001 is spreadsheet row 2)"
+name,character,Name,"Name of the enslaved person, as recorded"
+age,integer,Age,"Age in years, as recorded; one impossible value (-1) set to NA"
+sex,character,Gender,F or M; NA where not recorded
+occupation,character,Occupation,Occupation as recorded; 'Not Specified' where the source gives none; NA where the workbook reads 'NA' (76 records)
+origin,character,Origin_exact,Place of origin as recorded (Cape = born in the colony); NA where not recorded
+lbs_claim_number,character,UCL,"Compensation claim number, as used by the Legacies of British Slavery database (UCL); links people in one claim"
+owner_surname,character,Owner_surname,Surname of the slaveholder
+owner_given_names,character,Owner_name,Given names of the slaveholder
+owner_note,character,Owner_note,"Qualifier recorded with the owner's name (e.g. sr, jr, oorlede, Weduwee, 'sv' = son of)"
+owner_minor,integer,Owner_minor,1 if the owner is recorded as a minor
+owner_deceased,integer,Owner_deceased,1 if the owner is recorded as deceased (the estate held the person)
+place_a,character,Place_a,"Place of residence (farm or town), as recorded"
+place_b,character,Place_b,"Wider locality, as recorded"
+valuation,numeric,Valuation,"Appraised value of the person, as recorded; pounds sterling, though some may be rixdollars; not converted"
+claim_compensation,numeric,Compensation,"Compensation awarded for the claim (not the person), usually entered on one row of the claim, sometimes once per owner; 26 claims have more than one amount (see README); do not sum across people. Pounds sterling with shillings and pence as decimal fractions, as recorded"
+district,character,District_name,District of registration (11 districts)
+comments,character,Comments,"Notes in the workbook, including payment notes and source references such as BPP=5"

@@ -1,0 +1,5 @@
+file	change	original_md5
+MOOC10_vol15.xml	document type declaration removed (path to a DTD on a transcriber's computer; DTD not supplied)	660c7f2c8419f6cdbfc21c5cce8914ba
+MOOC10_vol16.xml	document type declaration removed (path to a DTD on a transcriber's computer; DTD not supplied)	0e4125ff3660e97adcfd347e569e17a1
+MOOC10_vol17.xml	document type declaration removed (path to a DTD on a transcriber's computer; DTD not supplied)	8fe66d01b4ba8c04fad92a786a6f7065
+MOOC10_vol18.xml	document type declaration removed (path to a DTD on a transcriber's computer; DTD not supplied)	6e671c357ef50cfb6a633cd2d9f32400

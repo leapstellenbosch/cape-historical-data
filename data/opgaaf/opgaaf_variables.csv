@@ -1,0 +1,137 @@
+variable,r_type,description,field_type_registry,measure_type,population_group,sex,age_lower_values,age_upper_values,n_sheets_recorded,definitions_vary_by_sheet,in_tax_units,in_entries
+chdr_id,character,"Repository identifier, never changed: OPG-{district}-{year}-{row} for a tax unit, where row is the spreadsheet row of its declaration; -E{n} for the n-th line of a tax unit (E1 is the declaration)",,,,,,,,,TRUE,TRUE
+tax_unit_chdr_id,character,chdr_id of the tax unit the line belongs to,,,,,,,,,FALSE,TRUE
+district,character,Cape Colony district represented by source workbook,,,,,,,,,TRUE,FALSE
+year,numeric,Year parsed from source sheet,,,,,,,,,TRUE,FALSE
+source_row,integer,Original one-based XLSX row number,,,,,,,,,FALSE,TRUE
+source_folio,integer,Folio number inferred from explicit folio markers,,,,,,,,,TRUE,TRUE
+entry_number_raw,character,Transcribed identifier or location field,character,identifier,,,,,317,FALSE,TRUE,TRUE
+folio_raw,character,Transcribed identifier or location field,character,identifier,,,,,20,FALSE,TRUE,TRUE
+add_info,character,Transcribed identifier or location field,character,identifier,settler,male,,,267,FALSE,TRUE,TRUE
+sub_district,character,Transcribed identifier or location field,character,identifier,,,,,142,FALSE,TRUE,TRUE
+field_cornet,character,Transcribed identifier or location field,character,identifier,settler,male,,,37,FALSE,TRUE,TRUE
+names_men,character,Transcribed name field; not automatically converted to a person count,character,named_person,settler,male,,,287,FALSE,TRUE,TRUE
+names_women,character,Transcribed name field; not automatically converted to a person count,character,named_person,settler,female,,,289,FALSE,TRUE,TRUE
+surname,character,Transcribed identifier or location field,character,identifier,,,,,17,FALSE,TRUE,TRUE
+given_names,character,Transcribed identifier or location field,character,identifier,,,,,17,FALSE,TRUE,TRUE
+farm_name,character,Transcribed identifier or location field,character,identifier,settler,male,,,93,FALSE,TRUE,TRUE
+source_page_info,character,Transcribed identifier or location field,character,identifier,,,,,10,FALSE,TRUE,FALSE
+settler_children,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,settler,,,,5,FALSE,TRUE,FALSE
+servants,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,,,,291,FALSE,TRUE,TRUE
+cattle_bull,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,2,FALSE,TRUE,FALSE
+cattle_work,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,187,FALSE,TRUE,TRUE
+cattle_calves,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,48,FALSE,TRUE,FALSE
+slave_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,slave,male,16,,330,TRUE,TRUE,TRUE
+cattle_cows,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,56,FALSE,TRUE,FALSE
+settler_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,settler,male,16,,301,TRUE,TRUE,TRUE
+settler_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,settler,female,20;25,,290,TRUE,TRUE,TRUE
+slave_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,slave,female,14;20,,320,TRUE,TRUE,TRUE
+slave_children,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,slave,,,,12,FALSE,TRUE,FALSE
+sheep,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,223,FALSE,TRUE,TRUE
+settler_sons,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,settler,male,0,0;15,327,TRUE,TRUE,TRUE
+settler_daughters,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,settler,female,0,15;19;24,327,TRUE,TRUE,TRUE
+cattle_heifers,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,9,FALSE,TRUE,FALSE
+horses,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,232,FALSE,TRUE,TRUE
+wheat_vol,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,187,FALSE,TRUE,TRUE
+rye_vol,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,171,FALSE,TRUE,FALSE
+barley_vol,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,51,FALSE,TRUE,TRUE
+cattle,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,59,FALSE,TRUE,TRUE
+settlers_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,,,,16,FALSE,TRUE,TRUE
+pigs,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,319,FALSE,TRUE,TRUE
+vines,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,282,FALSE,TRUE,TRUE
+goats,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,152,FALSE,TRUE,TRUE
+slave_daughters,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,slave,female,0,13;19,299,TRUE,TRUE,TRUE
+slave_sons,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,slave,male,0,15,321,TRUE,TRUE,TRUE
+wine,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,189,FALSE,TRUE,TRUE
+wheat_seed,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,109,FALSE,TRUE,TRUE
+rye_seed,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,109,FALSE,TRUE,FALSE
+barley_seed,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,109,FALSE,TRUE,TRUE
+khoe_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,khoe,female,14;20,,123,TRUE,TRUE,TRUE
+khoe_daughters,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,khoe,female,0,13;19,123,TRUE,TRUE,TRUE
+sheep_wether,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,139,FALSE,TRUE,TRUE
+donkeys,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,94,FALSE,TRUE,TRUE
+oat_vol,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,12,FALSE,TRUE,FALSE
+carts,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,120,FALSE,TRUE,TRUE
+khoe_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,khoe,male,16,,136,TRUE,TRUE,TRUE
+khoe_sons,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,khoe,male,0,15,139,TRUE,TRUE,TRUE
+cattle_breeding,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,103,FALSE,TRUE,TRUE
+prizenegro_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,prizenegro,male,16,,37,TRUE,TRUE,TRUE
+prizenegro_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,prizenegro,female,14;20,,38,TRUE,TRUE,TRUE
+prizenegro_sons,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,prizenegro,male,0,15,36,TRUE,TRUE,TRUE
+prizenegro_daughters,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,prizenegro,female,0,13;19,36,TRUE,TRUE,TRUE
+khoe_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,khoe,,,,18,FALSE,TRUE,TRUE
+slaves_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,slave,,,,6,FALSE,TRUE,TRUE
+prizenegro_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,prizenegro,,,,5,FALSE,TRUE,TRUE
+prizenegro_born_male,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,prizenegro,male,,,5,FALSE,TRUE,TRUE
+prizenegro_born_female,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,prizenegro,male,,,5,FALSE,TRUE,TRUE
+khoe_died_male,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,khoe,male,,,27,FALSE,TRUE,FALSE
+slaves_died_male,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,slave,male,,,39,FALSE,TRUE,TRUE
+prizenegro_died_male,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,prizenegro,male,,,5,FALSE,TRUE,FALSE
+freeblack_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,freeblack,male,16,,16,TRUE,TRUE,TRUE
+freeblack_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,freeblack,female,14;20,,16,TRUE,TRUE,TRUE
+freeblack_sons,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,freeblack,male,0,15,15,TRUE,TRUE,TRUE
+freeblack_daughters,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,freeblack,female,0,13;19,15,TRUE,TRUE,TRUE
+brandy,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,73,FALSE,TRUE,TRUE
+wagons,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,90,FALSE,TRUE,TRUE
+settlers_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,,,,2,FALSE,TRUE,TRUE
+khoe_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,khoe,,,,2,FALSE,TRUE,TRUE
+freeblacks_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,freeblack,,,,2,FALSE,TRUE,FALSE
+prizenegro_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,prizenegro,,,,3,FALSE,TRUE,TRUE
+slaves_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,slave,,,,2,FALSE,TRUE,TRUE
+freeblacks_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,freeblack,,,,3,FALSE,TRUE,TRUE
+horse_breeding,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,41,FALSE,TRUE,TRUE
+sheep_breeding,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,18,FALSE,TRUE,TRUE
+taxable_men,numeric,Persons liable to the specified tax; not directly comparable to household membership,numeric,taxable_person_stock,taxable_person,male,,,19,FALSE,TRUE,TRUE
+taxable_women,numeric,Persons liable to the specified tax; not directly comparable to household membership,numeric,taxable_person_stock,taxable_person,female,,,19,FALSE,TRUE,TRUE
+taxable_servants,numeric,Persons liable to the specified tax; not directly comparable to household membership,numeric,taxable_person_stock,servant,,,,19,FALSE,TRUE,TRUE
+servant_coachman,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,,,,1,FALSE,TRUE,FALSE
+servant_personal,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,,,,1,FALSE,TRUE,FALSE
+servant_home,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,,,,1,FALSE,TRUE,FALSE
+white_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,white,male,0,,4,FALSE,TRUE,TRUE
+white_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,white,female,0,,4,FALSE,TRUE,TRUE
+coloured_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,coloured,male,0,,4,FALSE,TRUE,TRUE
+coloured_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,coloured,female,0,,4,FALSE,TRUE,TRUE
+workers_farm,numeric,Persons reported as used in the specified economic sector,numeric,worker_stock,settler,male,0,,4,FALSE,TRUE,TRUE
+workers_factory,numeric,Persons reported as used in the specified economic sector,numeric,worker_stock,settler,male,0,,4,FALSE,TRUE,FALSE
+workers_retail,numeric,Persons reported as used in the specified economic sector,numeric,worker_stock,settler,male,0,,4,FALSE,TRUE,TRUE
+persons_born,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,male,0,0,4,FALSE,TRUE,TRUE
+persons_died,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,male,0,0,4,FALSE,TRUE,FALSE
+persons_married,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,male,0,0,4,FALSE,TRUE,TRUE
+servant_men,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,male,,,1,FALSE,TRUE,FALSE
+servant_women,numeric,Numeric person stock as defined by the source-sheet header; consult registry for age/status semantics,numeric,person_stock,servant,female,,,1,FALSE,TRUE,FALSE
+settlers_died_male,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,male,,,18,FALSE,TRUE,FALSE
+settlers_died_female,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,settler,female;male,,,17,FALSE,TRUE,TRUE
+khoe_died_female,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,khoe,female;male,,,22,FALSE,TRUE,FALSE
+slaves_died_female,numeric,Birth/death/marriage flow during the form's reporting period,numeric,person_flow,slave,female;male,,,22,FALSE,TRUE,FALSE
+horse_work,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,11,FALSE,TRUE,TRUE
+sheep_wool,numeric,Asset or production quantity as defined by the source sheet,numeric,asset_stock,,,,,11,FALSE,TRUE,FALSE
+oat_seed,numeric,See schema registry and release codebook,numeric,asset_stock;production_flow,,,,,11,FALSE,TRUE,FALSE
+land_owned_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,10,FALSE,TRUE,FALSE
+land_quitrent_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,10,FALSE,TRUE,TRUE
+land_loan_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,11,FALSE,TRUE,TRUE
+distance_owned_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,10,FALSE,TRUE,FALSE
+distance_loan_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,10,FALSE,TRUE,FALSE
+agricultural_use_loan_raw,character,See schema registry and release codebook,character,identifier;land_context,,,,,10,FALSE,TRUE,FALSE
+wagon_contribution_rixdollars,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+wagon_contribution_skillings,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+wagon_contribution_stuivers,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+church_contribution_rixdollars,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+church_contribution_skillings,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+opgaaf_tax_rixdollars,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+opgaaf_tax_skillings,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+opgaaf_tax_stuivers,numeric,Tax or contribution amount in the source currency unit named by the variable,numeric,tax_amount,,,,,5,FALSE,TRUE,TRUE
+khoe_in_service_men,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,khoe,male,16,,5,FALSE,TRUE,FALSE
+khoe_in_service_sons,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,khoe,male,0,15,5,FALSE,TRUE,FALSE
+khoe_in_service_women,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,khoe,female,14,,5,FALSE,TRUE,FALSE
+khoe_in_service_daughters,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,khoe,female,0,13,5,FALSE,TRUE,FALSE
+slave_in_service_men,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,slave,male,16,,5,FALSE,TRUE,FALSE
+slave_in_service_sons,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,slave,male,0,15,5,FALSE,TRUE,FALSE
+slave_in_service_women,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,slave,female,14,,5,FALSE,TRUE,FALSE
+slave_in_service_daughters,numeric,People in the separate In Dienst Hebbende block; excluded from recorded_person_count_sum because overlap is unknown,numeric,employment_stock,slave,female,0,13,5,FALSE,TRUE,FALSE
+opgaaf_tax_raw,character,Transcribed identifier or location field,character,identifier,,,,,3,FALSE,TRUE,FALSE
+land_loan_places_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE
+land_quitrent_places_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE
+land_quitrent_morgen_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE
+land_quitrent_square_roods_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE
+distance_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE
+agricultural_use_raw,character,Transcribed identifier or location field,character,identifier,,,,,1,FALSE,TRUE,FALSE

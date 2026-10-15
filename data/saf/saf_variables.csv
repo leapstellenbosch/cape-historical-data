@@ -1,0 +1,53 @@
+table,variable,type,source_column,description
+saf_persons,chdr_id,character,,"Repository identifier, never changed: SAF- and the person's row in the source sheet less one (SAF-000001 is row 2)"
+saf_persons,individual_id,character,individual_id,"SAF genealogical code: family name, then a letter per generation and a birth-order number (? = unknown); the code without its final number is the sibling group"
+saf_persons,generation,integer,generation,Generation number as recorded (the progenitor is 1); a few negative values remain
+saf_persons,mother_spouse_code,character,mothers_id,spouse_code of the marriage the person was born to; matches spouse_code in saf_marriages where that marriage is in the release (all but 437 persons)
+saf_persons,surname,character,surname,Surname as recorded
+saf_persons,first_names,character,first_names,Given names as recorded
+saf_persons,sex,character,gender,"Sex as recorded: m, f, u (unknown) and a few other codes"
+saf_persons,birth_year,integer,birth_year,Year of birth as recorded; NA where not recorded
+saf_persons,birth_month,integer,birth_month,Month of birth as recorded; NA where not recorded
+saf_persons,birth_day,integer,birth_day,Day of birth as recorded; NA where not recorded
+saf_persons,birth_place,character,birth_place,Place of birth as recorded
+saf_persons,baptism_year,integer,baptism_year,Year of baptism as recorded; NA where not recorded
+saf_persons,baptism_month,integer,baptism_month,Month of baptism as recorded; NA where not recorded
+saf_persons,baptism_day,integer,baptism_day,Day of baptism as recorded; NA where not recorded
+saf_persons,baptism_place,character,baptism_place,Place of baptism as recorded
+saf_persons,occupation,character,occupation,Occupation as recorded
+saf_persons,death_year,integer,death_year,Year of death as recorded; NA where not recorded
+saf_persons,death_month,integer,death_month,Month of death as recorded; NA where not recorded
+saf_persons,death_day,integer,death_day,Day of death as recorded; NA where not recorded
+saf_persons,death_place,character,death_place,Place of death as recorded
+saf_persons,burial_place,character,burial_place,Place of burial as recorded
+saf_persons,inclusion_basis,character,,"Why the person is in the release (born up to 1870): birth, baptism, or for the undated marriage or death by 1890, a parent born by 1840 or a child born by 1895"
+saf_persons,date_flag,character,,"Fields with implausible values, separated by semicolons: years outside 1600-2014, months outside 1-12, days outside 1-31, death_before_birth"
+saf_persons,id_flag,character,,"Set where individual_id occurs twice in the sheet: exact_duplicate_row_removed, repeated_id_same_name or repeated_id_different_person"
+saf_marriages,chdr_id,character,,"Repository identifier, never changed: the principal's chdr_id and -M{marriage_order}"
+saf_marriages,principal_chdr_id,character,,chdr_id of the principal; absent from saf_persons where the principal was born after 1870
+saf_marriages,marriage_order,integer,,"Which of the principal's marriages (1-4), from the sheet's marriage slot"
+saf_marriages,spouse_code,character,wife{n}_id,SAF code of the spouse: the principal's individual_id and _{marriage_order}
+saf_marriages,marriage_year,integer,married{n}_year,Year of the marriage as recorded; NA where not recorded
+saf_marriages,marriage_month,integer,married{n}_month,Month of the marriage as recorded; NA where not recorded
+saf_marriages,marriage_day,integer,married{n}_day,Day of the marriage as recorded; NA where not recorded
+saf_marriages,marriage_place,character,married{n}_place,Place of marriage as recorded
+saf_marriages,spouse_inclusion_basis,character,,"Why the spouse's details are published: birth or baptism up to 1870, or principal (an undated spouse of a published principal); empty where the spouse was born after 1870 and the details are withheld"
+saf_marriages,spouse_surname,character,spouse{n}_surname,Spouse's surname as recorded
+saf_marriages,spouse_first_names,character,spouse{n}_first_names,Spouse's given names as recorded
+saf_marriages,spouse_daughter_of,character,spouse{n}_daughter_of,"Spouse's parents, as recorded for a wife; often a note rather than a name"
+saf_marriages,spouse_son_of,character,spouse{n}_son_of,"Spouse's parents, as recorded for a husband; often a note rather than a name"
+saf_marriages,spouse_birth_year,integer,spouse{n}_birth_year,Year of the spouse's birth as recorded; NA where not recorded
+saf_marriages,spouse_birth_month,integer,spouse{n}_birth_month,Month of the spouse's birth as recorded; NA where not recorded
+saf_marriages,spouse_birth_day,integer,spouse{n}_birth_day,Day of the spouse's birth as recorded; NA where not recorded
+saf_marriages,spouse_birth_place,character,spouse{n}_birth_place,Place of the spouse's birth as recorded
+saf_marriages,spouse_baptism_year,integer,spouse{n}_baptism_year,Year of the spouse's baptism as recorded; NA where not recorded
+saf_marriages,spouse_baptism_month,integer,spouse{n}_baptism_month,Month of the spouse's baptism as recorded; NA where not recorded
+saf_marriages,spouse_baptism_day,integer,spouse{n}_baptism_day,Day of the spouse's baptism as recorded; NA where not recorded
+saf_marriages,spouse_baptism_place,character,spouse{n}_baptism_place,Place of the spouse's baptism as recorded
+saf_marriages,spouse_occupation,character,spouse{n}_occupation,Spouse's occupation as recorded
+saf_marriages,spouse_death_year,integer,spouse{n}_death_year,Year of the spouse's death as recorded; NA where not recorded
+saf_marriages,spouse_death_month,integer,spouse{n}_death_month,Month of the spouse's death as recorded; NA where not recorded
+saf_marriages,spouse_death_day,integer,spouse{n}_death_day,Day of the spouse's death as recorded; NA where not recorded
+saf_marriages,spouse_death_place,character,spouse{n}_death_place,Place of the spouse's death as recorded
+saf_marriages,spouse_burial_place,character,spouse{n}_burial_place,Place of the spouse's burial as recorded
+saf_marriages,date_flag,character,,"Fields with implausible values, as in saf_persons; spouse fields carry the prefix spouse_"

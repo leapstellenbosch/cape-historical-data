@@ -1,0 +1,113 @@
+{
+  "title": "Cape Historical Data Repository",
+  "upload_type": "dataset",
+  "version": "1.0",
+  "license": "cc-by-4.0",
+  "description": "<p>Five collections of records on the Cape Colony, 1650–1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University: cleaned tables of the opgaaf tax censuses (1660–1844, ten districts; 325,628 tax units), the 1834 slave emancipation records (36,417 records) and the South African Families genealogies (213,953 people born up to 1870 and 153,568 marriages), in CSV and Parquet; and the transcription XML of the Orphan Chamber probate inventories (MOOC8; 5,953 documents, 1673–1844) and estate auction rolls (MOOC10; 3,266 auctions, 1691–1834). Every file and column is described in the collections' READMEs and in datapackage.json.</p><p>Users must cite the paper(s) for each collection they use, listed in the README and below, and this release.</p>",
+  "creators": [
+    {
+      "name": "Fourie, Johan",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Green, Erik",
+      "affiliation": "Stellenbosch University; Lund University"
+    },
+    {
+      "name": "Burger, Christiaan",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Cilliers, Jeanne",
+      "affiliation": "Lund University"
+    },
+    {
+      "name": "de Wit, Chris",
+      "affiliation": "Independent researcher"
+    },
+    {
+      "name": "Ekama, Kate",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Greyling, Jan",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Heese, Hans",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Liebenberg, Helena",
+      "affiliation": "Tracing History Trust"
+    },
+    {
+      "name": "Martin, Lisa-Cheree",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Pretorius, Jan-Hendrik",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Ross, Robert",
+      "affiliation": "Stellenbosch University; Leiden University"
+    },
+    {
+      "name": "Schoots, Jonathan",
+      "affiliation": "Stellenbosch University; Lund University"
+    },
+    {
+      "name": "van der Linde, Paul",
+      "affiliation": "Stellenbosch University; Radboud University"
+    },
+    {
+      "name": "von Fintel, Dieter",
+      "affiliation": "Stellenbosch University"
+    }
+  ],
+  "keywords": [
+    "Cape Colony",
+    "economic history",
+    "tax censuses",
+    "opgaafrollen",
+    "slavery",
+    "emancipation",
+    "genealogy",
+    "probate inventories",
+    "auctions",
+    "South Africa"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.54272/sach.2025.v39n1a2",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1080/1081602X.2018.1509367",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1080/02582473.2025.2500410",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1111/j.1468-0289.2012.00662.x",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.51964/hlcs11095",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.eeh.2021.101390",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+cff-version: 1.2.0
+message: If you use these data, cite the paper(s) for each collection you use (see
+  README and references below) and this release.
+type: dataset
+title: Cape Historical Data Repository
+version: '1.0'
+license: CC-BY-4.0
+repository-code: https://github.com/leapstellenbosch/cape-historical-data
+keywords:
+- Cape Colony
+- economic history
+- tax censuses
+- opgaafrollen
+- slavery
+- genealogy
+- probate inventories
+- auctions
+authors:
+- family-names: Fourie
+  given-names: Johan
+  affiliation: Stellenbosch University
+- family-names: Green
+  given-names: Erik
+  affiliation: Stellenbosch University; Lund University
+- family-names: Burger
+  given-names: Christiaan
+  affiliation: Stellenbosch University
+- family-names: Cilliers
+  given-names: Jeanne
+  affiliation: Lund University
+- family-names: Wit
+  name-particle: de
+  given-names: Chris
+  affiliation: Independent researcher
+- family-names: Ekama
+  given-names: Kate
+  affiliation: Stellenbosch University
+- family-names: Greyling
+  given-names: Jan
+  affiliation: Stellenbosch University
+- family-names: Heese
+  given-names: Hans
+  affiliation: Stellenbosch University
+- family-names: Liebenberg
+  given-names: Helena
+  affiliation: Tracing History Trust
+- family-names: Martin
+  given-names: Lisa-Cheree
+  affiliation: Stellenbosch University
+- family-names: Pretorius
+  given-names: Jan-Hendrik
+  affiliation: Stellenbosch University
+- family-names: Ross
+  given-names: Robert
+  affiliation: Stellenbosch University; Leiden University
+- family-names: Schoots
+  given-names: Jonathan
+  affiliation: Stellenbosch University; Lund University
+- family-names: Linde
+  name-particle: van der
+  given-names: Paul
+  affiliation: Stellenbosch University; Radboud University
+- family-names: Fintel
+  name-particle: von
+  given-names: Dieter
+  affiliation: Stellenbosch University
+references:
+- type: article
+  title: Building the Cape of Good Hope Panel
+  authors:
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Green
+    given-names: Erik
+  journal: The History of the Family
+  year: 2018
+  volume: 23
+  issue: 3
+  start: 493
+  end: 502
+  doi: 10.1080/1081602X.2018.1509367
+- type: article
+  title: '''Waar is beter dorp in Zuid Africa dan Stellenbos?'': What the Stellenbosch-Drakenstein
+    Tax Censuses Reveal'
+  authors:
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Green
+    given-names: Erik
+  - family-names: Burger
+    given-names: Christiaan
+  - family-names: Wit
+    name-particle: de
+    given-names: Chris
+  - family-names: Ekama
+    given-names: Kate
+  - family-names: Greyling
+    given-names: Jan
+  - family-names: Heese
+    given-names: Hans
+  - family-names: Pretorius
+    given-names: Jan-Hendrik
+  - family-names: Ross
+    given-names: Robert
+  - family-names: Fintel
+    name-particle: von
+    given-names: Dieter
+  journal: South African Historical Journal
+  year: 2024
+  volume: 76
+  issue: 4
+  start: 420
+  end: 446
+  doi: 10.1080/02582473.2025.2500410
+- type: article
+  title: 'The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century
+    probate inventories'
+  authors:
+  - family-names: Fourie
+    given-names: Johan
+  journal: The Economic History Review
+  year: 2013
+  volume: 66
+  issue: 2
+  start: 419
+  end: 448
+  doi: 10.1111/j.1468-0289.2012.00662.x
+- type: article
+  title: Auction records, consumer culture and social networks in the Cape Colony,
+    1701-1825
+  authors:
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Liebenberg
+    given-names: Helena
+  - family-names: Schoots
+    given-names: Jonathan
+  - family-names: Linde
+    name-particle: van der
+    given-names: Paul
+  journal: South African Journal of Cultural History
+  year: 2025
+  volume: 39
+  issue: 1
+  start: 27
+  end: 49
+  doi: 10.54272/sach.2025.v39n1a2
+- type: article
+  title: The South African families database
+  authors:
+  - family-names: Cilliers
+    given-names: Jeanne
+  journal: Historical Life Course Studies
+  year: 2021
+  volume: 11
+  start: 97
+  end: 111
+  doi: 10.51964/hlcs11095
+- type: article
+  title: 'When Cape slavery ended: Introducing a new slave emancipation dataset'
+  authors:
+  - family-names: Ekama
+    given-names: Kate
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Heese
+    given-names: Hans
+  - family-names: Martin
+    given-names: Lisa-Cheree
+  journal: Explorations in Economic History
+  year: 2021
+  volume: 81
+  start: 101390
+  doi: 10.1016/j.eeh.2021.101390
