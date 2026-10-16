@@ -7,7 +7,7 @@ source(here("pipeline", "package", "citations.R"))
 
 rel <- here("release")
 concept_doi <- "10.5281/zenodo.23397436"
-version_dois <- c("1.0" = "10.5281/zenodo.23397437")   # add each new version's DOI after its release
+version_dois <- c("1.0" = "10.5281/zenodo.23397437", "1.1" = "10.5281/zenodo.23419842")   # add each new version's DOI after its release
 keywords <- c("Cape Colony", "economic history", "tax censuses", "opgaafrollen", "slavery", "emancipation",
               "runaway slaves", "genealogy", "Great Trek", "probate inventories", "auctions", "prices",
               "petitions", "directories", "South Africa")
