@@ -10,25 +10,28 @@ d <- function(...) file.path(rel, "data", ...)
 md5 <- function(path) unname(tools::md5sum(file.path(rel, path)))
 bytes <- function(path) file.size(file.path(rel, path))
 
-# ---- Citations, by collection ----
-paper <- function(title, doi) list(title = title, path = paste0("https://doi.org/", doi))
-cite <- list(
-  opgaaf = list(
-    paper("Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502", "10.1080/1081602X.2018.1509367"),
-    paper("Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446", "10.1080/02582473.2025.2500410")),
-  emancipation = list(
-    paper("Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390", "10.1016/j.eeh.2021.101390")),
-  saf = list(
-    paper("Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111", "10.51964/hlcs11095")),
-  probate = list(
-    paper("Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448", "10.1111/j.1468-0289.2012.00662.x")),
-  auctions = list(
-    paper("Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49", "10.54272/sach.2025.v39n1a2")))
-cite_note <- function(coll) paste0(" Cite: ", paste(map_chr(cite[[coll]], "title"), collapse = "; and "), ".")
+# ---- Citations, by collection (from citations.R) ----
+source(here("pipeline", "package", "citations.R"))
+cite <- map(set_names(unique(map_chr(works, "coll"))), function(coll) {
+  c(map(keep(works, ~.x$coll == coll), function(w) {
+      s <- list(title = paste0(if (w$role == "source") "Source: ", short_ref(w)))
+      if (!is.null(w$doi)) s$path <- paste0("https://doi.org/", w$doi)
+      s
+    }),
+    # where the original records are held
+    map(archives[[coll]], ~list(title = paste("Archival source:", .x))))
+})
+cite_note <- function(coll) paste0(" Cite: ", paste(map_chr(keep(cite[[coll]], ~!str_starts(.x$title, "Source: |Archival source: ")), "title"),
+                                                   collapse = "; and "), ".")
+# The runaway advertisements keep the licence of their Dataverse deposit
+licence_of <- function(coll) if (coll == "runaways")
+  list(list(name = "CC-BY-NC-SA-4.0", title = "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            path = "https://creativecommons.org/licenses/by-nc-sa/4.0/"))
 
 # ---- Field types ----
 type_of <- function(x) {
-  if (is.logical(x)) "boolean"
+  if (inherits(x, "Date")) "date"
+  else if (is.logical(x)) "boolean"
   else if (is.integer(x)) "integer"
   else if (is.double(x)) if (all(is.na(x) | x == round(x))) "integer" else "number"
   else "string"
@@ -56,14 +59,16 @@ table_resource <- function(path, name, title, description, coll, data, descripti
   if (!is.null(primary_key)) r$schema$primaryKey <- primary_key
   if (!is.null(foreign_keys)) r$schema$foreignKeys <- foreign_keys
   r$sources <- cite[[coll]]
-  r$licenses <- NULL
+  r$licenses <- licence_of(coll)
   r
 }
 parquet_resource <- function(path, name, csv_name, coll) {
-  list(name = name, path = path, title = paste("Parquet copy of", csv_name),
-       description = paste0("The same table as ", csv_name, ", in Parquet (zstd), with column types.", cite_note(coll)),
-       format = "parquet", mediatype = "application/vnd.apache.parquet",
-       bytes = bytes(path), hash = md5(path), sources = cite[[coll]])
+  r <- list(name = name, path = path, title = paste("Parquet copy of", csv_name),
+            description = paste0("The same table as ", csv_name, ", in Parquet (zstd), with column types.", cite_note(coll)),
+            format = "parquet", mediatype = "application/vnd.apache.parquet",
+            bytes = bytes(path), hash = md5(path), sources = cite[[coll]])
+  r$licenses <- licence_of(coll)    # absent (the package licence) except for the runaways
+  r
 }
 named <- function(tbl, key = "variable", value = "description") set_names(as.list(tbl[[value]]), tbl[[key]])
 
@@ -152,6 +157,12 @@ for (t in list(
        description = "Cell-, row- and sheet-level warnings and exclusions."),
   list(f = "opgaaf_corrections_log", title = "Opgaaf corrections log", desc = corr_desc, pk = "correction_id",
        description = "Every correction or interpretation applied to the transcription."),
+  list(f = "opgaaf_archival_references", title = "Opgaaf archival references", pk = list("district", "year"),
+       desc = list(district = "District", year = "Year of the return",
+                   archive = "Archive holding the original: the Western Cape Archives and Records Service (Cape Town) or the Nationaal Archief (The Hague)",
+                   reference = "The archive's reference: a volume of WCARS series J (J 183), or an inventory number in the VOC archive, 1.04.02 (VOC 1.04.02, inv. 4021)",
+                   note = "Qualification: copies, scans, uncertain volumes"),
+       description = "The archival source of each district-year: the volume or inventory number of the original return, from the transcribers' indexes, checked against the WCARS inventory of series J."),
   list(f = "opgaaf_variables", title = "Opgaaf variable list", desc = opgvar_desc, pk = "variable",
        description = "Every variable of the opgaaf tables: type, meaning, population group, sex and age limits."))) {
   path <- paste0("data/opgaaf/", t$f, ".csv")
@@ -191,6 +202,71 @@ add(table_resource("data/saf/saf_variables.csv", "saf-variables", "SAF variable 
                    "saf", saf_vars, var_list_desc, primary_key = list("table", "variable")))
 add(parquet_resource("data/saf/saf_persons.parquet", "saf-persons-parquet", "saf_persons.csv", "saf"))
 add(parquet_resource("data/saf/saf_marriages.parquet", "saf-marriages-parquet", "saf_marriages.csv", "saf"))
+
+# ---------------------------------------------------------------------------
+# Collections added in version 1.1
+# ---------------------------------------------------------------------------
+pq <- function(coll, stem) nanoparquet::read_parquet(d(coll, paste0(stem, ".parquet")))
+vars_of <- function(coll) read_any(paste0("data/", coll, "/", coll, "_variables.csv"))
+add_table <- function(coll, stem, title, description, pk, fk = NULL, multi = FALSE) {
+  v <- vars_of(coll)
+  if (multi) v <- filter(v, table == stem)
+  add(table_resource(paste0("data/", coll, "/", stem, ".csv"), str_replace_all(stem, "_", "-"), title, description,
+                     coll, pq(coll, stem), named(v), primary_key = pk, foreign_keys = fk))
+}
+add_vars <- function(coll, title, multi = FALSE) {
+  path <- paste0("data/", coll, "/", coll, "_variables.csv")
+  add(table_resource(path, paste0(coll, "-variables"), title, paste("Every variable of the", coll, "tables, its source column and meaning."),
+                     coll, read_any(path), if (multi) var_list_desc else var_list_desc[-1],
+                     primary_key = if (multi) list("table", "variable") else "variable"))
+}
+add_pq <- function(coll, stem) add(parquet_resource(paste0("data/", coll, "/", stem, ".parquet"),
+                                                    paste0(str_replace_all(stem, "_", "-"), "-parquet"), paste0(stem, ".csv"), coll))
+
+add_table("runaways", "runaways_persons", "Runaway advertisements",
+          "One row per person named in a runaway advertisement in De Zuid Afrikaan or the Government Gazette, 1830-1842, from Bergemann's Harvard Dataverse deposit. Licensed CC BY-NC-SA 4.0.",
+          "chdr_id")
+add_vars("runaways", "Runaway variable list"); add_pq("runaways", "runaways_persons")
+
+goods_fk <- list(list(fields = "good", reference = list(resource = "prices-goods", fields = "good")))
+add_table("prices", "prices_goods", "Auction price goods",
+          "The 30 goods priced in the auction rolls, their asset type and class, and the Dutch terms searched for.", "good", multi = TRUE)
+add_table("prices", "prices_annual", "Auction prices by year",
+          "Median and mean unit price in rixdollars of each good sold at estate auctions, by year, 1718-1813. A derived series built from the MOOC10 auction rolls.",
+          list("year", "good"), goods_fk, multi = TRUE)
+add_table("prices", "prices_auction_goods", "Goods sold at each auction",
+          "Number of units of each of the 30 goods sold at each estate auction, 1718-1813; mooc_id matches the document's n attribute in the auctions XML.",
+          list("mooc_id", "year", "good"), goods_fk, multi = TRUE)
+add_vars("prices", "Price variable list", multi = TRUE)
+walk(c("prices_goods", "prices_annual", "prices_auction_goods"), ~add_pq("prices", .x))
+
+add_table("petition1779", "petition1779_signatories", "1779 petition signatories",
+          "One row per signatory of the 1779 Cape Patriots petition (WCARS C 2665), in the order they signed.", "chdr_id")
+add_vars("petition1779", "Petition variable list"); add_pq("petition1779", "petition1779_signatories")
+
+
+add_table("voortrekkers", "voortrekkers_persons", "Voortrekkers",
+          "One row per trekker in the register transcribed from Visagie's Voortrekkerstamouers 1835-1845.", "chdr_id", multi = TRUE)
+add_table("voortrekkers", "voortrekkers_marriages", "Voortrekker marriages",
+          "One row per marriage of a trekker, with the spouse's details.", "chdr_id",
+          list(list(fields = "principal_chdr_id", reference = list(resource = "voortrekkers-persons", fields = "chdr_id"))), multi = TRUE)
+add(table_resource("data/voortrekkers/voortrekkers_realignments.csv", "voortrekkers-realignments", "Voortrekker realignments",
+                   "Rows of the source sheet in which a block of dates and places was typed in the wrong columns, and how it was read.",
+                   "voortrekkers", read_any("data/voortrekkers/voortrekkers_realignments.csv"),
+                   list(chdr_id = "chdr_id of the trekker", source_row = "Row in the source sheet",
+                        change = "Which block (person, m1-m5) was read from other columns, and how"), primary_key = "chdr_id"))
+add_vars("voortrekkers", "Voortrekker variable list", multi = TRUE)
+walk(c("voortrekkers_persons", "voortrekkers_marriages"), ~add_pq("voortrekkers", .x))
+
+add_table("almanacs", "almanacs_entries", "Cape almanac directory entries",
+          "One row per entry in the directories of the African Court Calendar, Cape Advertiser, Cape Almanac and Transvaal Almanac, 1813-1891.",
+          "chdr_id")
+add(table_resource("data/almanacs/almanacs_removed_repeats.csv", "almanacs-removed-repeats", "Almanac entries removed as repeats",
+                   "Entries typed twice (identical in every column within an edition): the removed entry and the published entry it repeats.",
+                   "almanacs", read_any("data/almanacs/almanacs_removed_repeats.csv"),
+                   list(chdr_id = "Identifier the removed entry would have had", repeats = "chdr_id of the published entry it repeats"),
+                   primary_key = "chdr_id"))
+add_vars("almanacs", "Almanac variable list"); add_pq("almanacs", "almanacs_entries")
 
 # ---------------------------------------------------------------------------
 # XML: the file tables and one resource per file
@@ -250,12 +326,16 @@ pkg <- list(
   name = "cape-historical-data",
   title = "Cape Historical Data Repository",
   id = paste0("https://doi.org/", cff$doi),
-  version = "1.0",
+  version = release_version,
   description = paste(
-    "Five collections of records on the Cape Colony, 1650-1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University:",
-    "cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records and the South African Families genealogies (people born up to 1870),",
-    "and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10).",
-    "Users must cite the paper(s) for each collection they use (each resource's sources) and this release."),
+    "Records on the Cape Colony, 1660-1891, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University:",
+    "cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records, the South African Families genealogies (people born up to 1870),",
+    "runaway slave advertisements (1830-1842), the 1779 Cape Patriots petition, the Voortrekker register and the Cape almanac directories (1813-1891);",
+    "yearly prices of goods sold at estate auctions (1718-1813); and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10).",
+    "Users must cite the paper(s) for each collection they use (each resource's sources) and this release.",
+    "Licence CC BY 4.0, except the runaway advertisements (CC BY-NC-SA 4.0, the licence of their original deposit).",
+    "Most of the records are transcriptions of documents held by the Western Cape Archives and Records Service, Cape Town (opgaafrollen, series J; Slave Office, SO 6 and SO 20; Master of the Orphan Chamber, MOOC 8 and MOOC 10; Council of Policy, C 2665), with early tax returns from the Nationaal Archief, The Hague (VOC archive, 1.04.02); the README lists the archival source of each collection.",
+    "The transcription was funded by Riksbankens Jubileumsfond (the Bank of Sweden Tercentenary Foundation) through the Cape of Good Hope Panel project, grant M20-0041."),
   homepage = "https://github.com/leapstellenbosch/cape-historical-data",
   licenses = list(list(name = "CC-BY-4.0", title = "Creative Commons Attribution 4.0",
                        path = "https://creativecommons.org/licenses/by/4.0/")),

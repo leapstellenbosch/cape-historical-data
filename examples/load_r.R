@@ -1,8 +1,9 @@
 # Load the Cape Historical Data Repository in R.
-# Run from the repository folder. Needs readr, dplyr and xml2;
+# Run from the repository folder. Needs readr, dplyr, stringr and xml2;
 # nanoparquet (or arrow) for the faster Parquet files.
 library(readr)
 library(dplyr)
+library(stringr)
 library(xml2)
 
 # Always read the CSV files with guess_max = Inf (or use the Parquet files):
@@ -69,3 +70,30 @@ roll <- read_xml("data/auctions/xml/MOOC10_vol25.xml")
 sale <- xml_find_first(roll, "/text/body/div[@n='MOOC10/25.2']")
 lots <- lapply(xml_find_all(sale, ".//table/row"), function(r) xml_text(xml_find_all(r, "./cell")))
 head(lots)
+
+# ---- Runaway advertisements (licence CC BY-NC-SA 4.0) ----
+runaways <- read_csv("data/runaways/runaways_persons.csv", guess_max = Inf)
+count(runaways, newspaper, year = as.integer(format(publication_date, "%Y")))
+
+# ---- Auction prices: join the yearly prices to the goods ----
+goods <- read_csv("data/prices/prices_goods.csv")
+prices <- read_csv("data/prices/prices_annual.csv") |> left_join(goods, by = "good")
+filter(prices, good == "slaves") |> select(year, median_price, mean_price) |> tail()
+# The goods counted at each auction join to the auction rolls on mooc_id
+sold <- read_csv("data/prices/prices_auction_goods.csv")
+
+# ---- 1779 petition ----
+petition <- read_csv("data/petition1779/petition1779_signatories.csv")
+count(petition, rank, sort = TRUE)
+
+# ---- Voortrekkers ----
+trekkers <- read_csv("data/voortrekkers/voortrekkers_persons.csv", col_types = cols(.default = "c"))
+trek_marriages <- read_csv("data/voortrekkers/voortrekkers_marriages.csv", col_types = cols(.default = "c"))
+# Dates are ISO text where they could be read, otherwise as transcribed:
+# take the year where the date starts with one
+trekkers |> mutate(birth_year = as.integer(str_extract(birth_date, "^1[6-9][0-9]{2}"))) |>
+  count(trek_destination, sort = TRUE) |> head()
+
+# ---- Almanac directories ----
+almanacs <- read_csv("data/almanacs/almanacs_entries.csv", guess_max = Inf)
+count(almanacs, publication, year)

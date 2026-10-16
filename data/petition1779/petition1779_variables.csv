@@ -1,0 +1,6 @@
+variable,type,source_column,description
+chdr_id,character,,"Repository identifier, never changed: PET- and the signatory's position on the petition (PET-001 signed first)"
+name,character,Name,Name as signed
+name_suffix,character,Further Description,"Patronymic or distinguishing suffix written after the name (Jansz, de Jonge, de Oude)"
+rank,character,Rank,"Rank or office given after the name: Burger, Heemraad, Burgerraad, militia and church offices; oud = former"
+note,character,Notes,"Transcriber's note, e.g. signed with x"

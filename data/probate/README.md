@@ -18,6 +18,14 @@ Measurements from eighteenth-century probate inventories", *Economic History
 Review* 66(2): 419–448,
 doi:[10.1111/j.1468-0289.2012.00662.x](https://doi.org/10.1111/j.1468-0289.2012.00662.x).
 
+**Archival source:** the Western Cape Archives and Records Service (WCARS), Cape Town, records of the Master of the Orphan
+Chamber (MOOC, WCARS inventory 1/3): **MOOC 8/1–8/48**, inventories, general
+series, 1673–1834; **MOOC 8/49–8/74**, inventories and appraisements,
+1780–1834; and **MOOC 8/75**, unbound inventories, 1673–1825. The file for
+each volume is named after it (`MOOC8_vol01.xml` is MOOC 8/1). The volumes
+were transcribed from the originals at the archives by the TEPC transcription
+project (2004–2008).
+
 ## Files
 
 | File | Contents |

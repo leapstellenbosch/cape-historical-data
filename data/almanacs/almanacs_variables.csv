@@ -1,0 +1,14 @@
+variable,type,source_column,description
+chdr_id,character,,"Repository identifier, never changed: ALM-, the publication (ACC African Court Calendar, CAD Cape Advertiser, CAL Cape Almanac, TVL Transvaal Almanac), the edition year and the entry's position in that edition's table (ALM-CAL-1838-00001)"
+publication,character,table name,"African Court Calendar (1813-1827), Cape Advertiser (1821), Cape Almanac (1828-1891) or Transvaal Almanac (1881)"
+year,integer,table name,Year of the edition
+surname,character,Surname; Surname Or Business; Surname Or Company Name,"Surname, or the name of a firm or institution"
+first_names,character,First Name,First names or initials
+title,character,Title,"Title or status as printed: Mrs, Widow, Rev., Captain, Junior, ..."
+occupation,character,Profession; Occupation,"Occupation, office or business as printed"
+address,character,Address; Street Address; StreetAddress,Street address as printed
+section,character,Area; Place of Residence; Residence; Section; Section Title in Book,"Heading under which the entry is printed (town, suburb or section), where the transcriber recorded it (1838, 1847, 1863, 1868, 1875, 1881 Transvaal)"
+erf_number,character,Erf Number,"Erf (plot) number, 1881 Transvaal Almanac only"
+notes,character,Notes,"Transcriber's notes, often the heading of the list the entry comes from"
+image,character,Image; Image Name,File name of the page image the entry was transcribed from
+transcriber,character,Transcriber; Transcriber Name,Volunteer who transcribed the entry

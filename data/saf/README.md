@@ -12,7 +12,19 @@ collections.
 
 **Cite:** Cilliers, J. (2021), "The South African Families Database",
 *Historical Life Course Studies* 11: 97–111,
-doi:[10.51964/hlcs11095](https://doi.org/10.51964/hlcs11095).
+doi:[10.51964/hlcs11095](https://doi.org/10.51964/hlcs11095); and Cilliers, J.,
+Green, E., McCants, A. E. and Rijpma, A. (2025), "Wealth and marriage at the
+Cape: consanguineous unions as a strategy", *The History of the Family* 30(2):
+258–284, doi:[10.1080/1081602X.2025.2478381](https://doi.org/10.1080/1081602X.2025.2478381).
+
+**Archival source:** the database is a compilation of the Genealogical
+Institute of South Africa's *Suid-Afrikaanse Geslagsregisters*, not a single
+archival series. According to Cilliers (2021) the registers draw on the
+baptism and marriage registers of the Dutch Reformed Church (church archives,
+Cape Town), the marriage records of the courts of Cape Town, Graaff-Reinet,
+Tulbagh and Colesberg (card index at the Western Cape Archives and Records Service (WCARS), Cape Town), death notices in the
+estate files of Cape Town (at WCARS, Master of the Orphan Chamber, MOOC 6/9)
+and Bloemfontein, and published genealogies (De Villiers 1894; Heese 1971).
 
 ## Files
 

@@ -3,8 +3,8 @@
   "name": "cape-historical-data",
   "title": "Cape Historical Data Repository",
   "id": "https://doi.org/10.5281/zenodo.23397436",
-  "version": "1.0",
-  "description": "Five collections of records on the Cape Colony, 1650-1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University: cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records and the South African Families genealogies (people born up to 1870), and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10). Users must cite the paper(s) for each collection they use (each resource's sources) and this release.",
+  "version": "1.1",
+  "description": "Records on the Cape Colony, 1660-1891, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University: cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records, the South African Families genealogies (people born up to 1870), runaway slave advertisements (1830-1842), the 1779 Cape Patriots petition, the Voortrekker register and the Cape almanac directories (1813-1891); yearly prices of goods sold at estate auctions (1718-1813); and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10). Users must cite the paper(s) for each collection they use (each resource's sources) and this release. Licence CC BY 4.0, except the runaway advertisements (CC BY-NC-SA 4.0, the licence of their original deposit). Most of the records are transcriptions of documents held by the Western Cape Archives and Records Service, Cape Town (opgaafrollen, series J; Slave Office, SO 6 and SO 20; Master of the Orphan Chamber, MOOC 8 and MOOC 10; Council of Policy, C 2665), with early tax returns from the Nationaal Archief, The Hague (VOC archive, 1.04.02); the README lists the archival source of each collection. The transcription was funded by Riksbankens Jubileumsfond (the Bank of Sweden Tercentenary Foundation) through the Cape of Good Hope Panel project, grant M20-0041.",
   "homepage": "https://github.com/leapstellenbosch/cape-historical-data",
   "licenses": [
     {
@@ -13,7 +13,7 @@
       "path": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "keywords": ["Cape Colony", "economic history", "tax censuses", "opgaafrollen", "slavery", "genealogy", "probate inventories", "auctions"],
+  "keywords": ["Cape Colony", "economic history", "tax censuses", "opgaafrollen", "slavery", "emancipation", "runaway slaves", "genealogy", "Great Trek", "probate inventories", "auctions", "prices", "petitions", "directories", "South Africa"],
   "contributors": [
     {
       "title": "Johan Fourie",
@@ -24,6 +24,16 @@
       "title": "Erik Green",
       "role": "author",
       "organization": "Stellenbosch University; Lund University"
+    },
+    {
+      "title": "Karl Bergemann",
+      "role": "author",
+      "organization": "Stellenbosch University"
+    },
+    {
+      "title": "Gabriel Brown",
+      "role": "author",
+      "organization": "Stellenbosch University"
     },
     {
       "title": "Christiaan Burger",
@@ -61,14 +71,34 @@
       "organization": "Tracing History Trust"
     },
     {
+      "title": "Calumet Links",
+      "role": "author",
+      "organization": "Stellenbosch University"
+    },
+    {
       "title": "Lisa-Cheree Martin",
       "role": "author",
       "organization": "Stellenbosch University"
     },
     {
+      "title": "Igor Martins",
+      "role": "author",
+      "organization": "Lund University"
+    },
+    {
+      "title": "Anne E. McCants",
+      "role": "author",
+      "organization": "Massachusetts Institute of Technology"
+    },
+    {
       "title": "Jan-Hendrik Pretorius",
       "role": "author",
       "organization": "Stellenbosch University"
+    },
+    {
+      "title": "Auke Rijpma",
+      "role": "author",
+      "organization": "Utrecht University"
     },
     {
       "title": "Robert Ross",
@@ -89,15 +119,20 @@
       "title": "Dieter von Fintel",
       "role": "author",
       "organization": "Stellenbosch University"
+    },
+    {
+      "title": "Leoné Walters",
+      "role": "author",
+      "organization": "University of Cape Town"
     }
   ],
-  "created": "2026-10-15T14:04:11Z",
+  "created": "2026-10-16T14:03:28Z",
   "resources": [
     {
       "name": "opgaaf-tax-units",
       "path": "data/opgaaf/opgaaf_tax_units.csv",
       "title": "Opgaaf tax units",
-      "description": "One row per tax unit (declaration) in the opgaaf tax censuses, 1660-1844, ten districts. Sheet-level attributes (workbook, sheet, form type) are in opgaaf_sheet_inventory, joined on district and year. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "One row per tax unit (declaration) in the opgaaf tax censuses, 1660-1844, ten districts. Sheet-level attributes (workbook, sheet, form type) are in opgaaf_sheet_inventory, joined on district and year. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -802,8 +837,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -811,7 +856,7 @@
       "name": "opgaaf-entries",
       "path": "data/opgaaf/opgaaf_entries.csv",
       "title": "Opgaaf entries of multi-line tax units",
-      "description": "The transcribed lines of the 5,604 tax units that combine several lines; -E1 is the declaration. A tax unit with one line equals that line, so its line is not repeated here. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "The transcribed lines of the 5,604 tax units that combine several lines; -E1 is the declaration. A tax unit with one line equals that line, so its line is not repeated here. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1290,8 +1335,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1299,7 +1354,7 @@
       "name": "opgaaf-sheet-inventory",
       "path": "data/opgaaf/opgaaf_sheet_inventory.csv",
       "title": "Opgaaf sheet inventory",
-      "description": "One row per district and year: the workbook and sheet transcribed, its form type and structure. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "One row per district and year: the workbook and sheet transcribed, its form type and structure. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1382,8 +1437,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1391,7 +1456,7 @@
       "name": "opgaaf-schema-registry",
       "path": "data/opgaaf/opgaaf_schema_registry.csv",
       "title": "Opgaaf schema registry",
-      "description": "Every original column header in every sheet, the variable it maps to and the confidence of the mapping. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "Every original column header in every sheet, the variable it maps to and the confidence of the mapping. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1485,8 +1550,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1494,7 +1569,7 @@
       "name": "opgaaf-quality-flags",
       "path": "data/opgaaf/opgaaf_quality_flags.csv",
       "title": "Opgaaf quality flags",
-      "description": "Cell-, row- and sheet-level warnings and exclusions. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "Cell-, row- and sheet-level warnings and exclusions. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1568,8 +1643,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1577,7 +1662,7 @@
       "name": "opgaaf-corrections-log",
       "path": "data/opgaaf/opgaaf_corrections_log.csv",
       "title": "Opgaaf corrections log",
-      "description": "Every correction or interpretation applied to the transcription. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "Every correction or interpretation applied to the transcription. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1652,8 +1737,85 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
+        }
+      ]
+    },
+    {
+      "name": "opgaaf-archival-references",
+      "path": "data/opgaaf/opgaaf_archival_references.csv",
+      "title": "Opgaaf archival references",
+      "description": "The archival source of each district-year: the volume or inventory number of the original return, from the transcribers' indexes, checked against the WCARS inventory of series J. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 28213,
+      "hash": "4f813475426ec1d0649e721884eea574",
+      "schema": {
+        "fields": [
+          {
+            "name": "district",
+            "type": "string",
+            "description": "District"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Year of the return"
+          },
+          {
+            "name": "archive",
+            "type": "string",
+            "description": "Archive holding the original: the Western Cape Archives and Records Service (Cape Town) or the Nationaal Archief (The Hague)"
+          },
+          {
+            "name": "reference",
+            "type": "string",
+            "description": "The archive's reference: a volume of WCARS series J (J 183), or an inventory number in the VOC archive, 1.04.02 (VOC 1.04.02, inv. 4021)"
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Qualification: copies, scans, uncertain volumes"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "district",
+          "year"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502",
+          "path": "https://doi.org/10.1080/1081602X.2018.1509367"
+        },
+        {
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1661,7 +1823,7 @@
       "name": "opgaaf-variables",
       "path": "data/opgaaf/opgaaf_variables.csv",
       "title": "Opgaaf variable list",
-      "description": "Every variable of the opgaaf tables: type, meaning, population group, sex and age limits. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "Every variable of the opgaaf tables: type, meaning, population group, sex and age limits. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1746,8 +1908,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1755,7 +1927,7 @@
       "name": "opgaaf-tax-units-parquet",
       "path": "data/opgaaf/opgaaf_tax_units.parquet",
       "title": "Parquet copy of opgaaf_tax_units.csv",
-      "description": "The same table as opgaaf_tax_units.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "The same table as opgaaf_tax_units.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "parquet",
       "mediatype": "application/vnd.apache.parquet",
       "bytes": 20486237,
@@ -1766,8 +1938,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1775,7 +1957,7 @@
       "name": "opgaaf-entries-parquet",
       "path": "data/opgaaf/opgaaf_entries.parquet",
       "title": "Parquet copy of opgaaf_entries.csv",
-      "description": "The same table as opgaaf_entries.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446.",
+      "description": "The same table as opgaaf_entries.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. The History of the Family 23(3): 493-502; and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446; and Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129.",
       "format": "parquet",
       "mediatype": "application/vnd.apache.parquet",
       "bytes": 1164823,
@@ -1786,8 +1968,18 @@
           "path": "https://doi.org/10.1080/1081602X.2018.1509367"
         },
         {
-          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
+          "title": "Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J. H., Ross, R. and von Fintel, D. (2024). 'Waar is beter dorp in Zuid Africa dan Stellenbos?': What the Stellenbosch-Drakenstein Tax Censuses Reveal. South African Historical Journal 76(4): 420-446",
           "path": "https://doi.org/10.1080/02582473.2025.2500410"
+        },
+        {
+          "title": "Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. Historical Methods: A Journal of Quantitative and Interdisciplinary History 53(2): 112-129",
+          "path": "https://doi.org/10.1080/01615440.2018.1517030"
+        },
+        {
+          "title": "Archival source: WCARS, opgaafrollen (returns for taxation purposes), series J (inventory 1/5), volumes J 1-J 438; the volume of each district-year is in opgaaf_archival_references.csv"
+        },
+        {
+          "title": "Archival source: Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"
         }
       ]
     },
@@ -1795,7 +1987,7 @@
       "name": "emancipation-persons",
       "path": "data/emancipation/emancipation_persons.csv",
       "title": "Slave emancipation records",
-      "description": "One row per record of an enslaved person in the 1834 emancipation registers and compensation claims. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390.",
+      "description": "One row per record of an enslaved person in the 1834 emancipation registers and compensation claims. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390; and Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1901,8 +2093,18 @@
       },
       "sources": [
         {
-          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
+          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
           "path": "https://doi.org/10.1016/j.eeh.2021.101390"
+        },
+        {
+          "title": "Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506",
+          "path": "https://doi.org/10.1016/j.eeh.2022.101506"
+        },
+        {
+          "title": "Archival source: WCARS, Slave Office (SO, inventory 1/21): SO 20, Slave Compensation Office (valuation lists by district, e.g. SO 20/10 for Graaff-Reinet), and SO 6, registers of slaves"
+        },
+        {
+          "title": "Archival source: The National Archives (UK), T 71, Office of Registry of Colonial Slaves and Slave Compensation Commission, via the Legacies of British Slavery database (compensation awards)"
         }
       ]
     },
@@ -1910,7 +2112,7 @@
       "name": "emancipation-variables",
       "path": "data/emancipation/emancipation_variables.csv",
       "title": "Emancipation variable list",
-      "description": "Every variable of emancipation_persons, its source column and meaning. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390.",
+      "description": "Every variable of emancipation_persons, its source column and meaning. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390; and Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -1946,8 +2148,18 @@
       },
       "sources": [
         {
-          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
+          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
           "path": "https://doi.org/10.1016/j.eeh.2021.101390"
+        },
+        {
+          "title": "Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506",
+          "path": "https://doi.org/10.1016/j.eeh.2022.101506"
+        },
+        {
+          "title": "Archival source: WCARS, Slave Office (SO, inventory 1/21): SO 20, Slave Compensation Office (valuation lists by district, e.g. SO 20/10 for Graaff-Reinet), and SO 6, registers of slaves"
+        },
+        {
+          "title": "Archival source: The National Archives (UK), T 71, Office of Registry of Colonial Slaves and Slave Compensation Commission, via the Legacies of British Slavery database (compensation awards)"
         }
       ]
     },
@@ -1955,15 +2167,25 @@
       "name": "emancipation-persons-parquet",
       "path": "data/emancipation/emancipation_persons.parquet",
       "title": "Parquet copy of emancipation_persons.csv",
-      "description": "The same table as emancipation_persons.csv, in Parquet (zstd), with column types. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390.",
+      "description": "The same table as emancipation_persons.csv, in Parquet (zstd), with column types. Cite: Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390; and Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506.",
       "format": "parquet",
       "mediatype": "application/vnd.apache.parquet",
       "bytes": 1364481,
       "hash": "4e5a60c87e1f2505afdb62e6cbfd45c0",
       "sources": [
         {
-          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
+          "title": "Ekama, K., Fourie, J., Heese, H. and Martin, L. C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. Explorations in Economic History 81: 101390",
           "path": "https://doi.org/10.1016/j.eeh.2021.101390"
+        },
+        {
+          "title": "Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. Explorations in Economic History 89: 101506",
+          "path": "https://doi.org/10.1016/j.eeh.2022.101506"
+        },
+        {
+          "title": "Archival source: WCARS, Slave Office (SO, inventory 1/21): SO 20, Slave Compensation Office (valuation lists by district, e.g. SO 20/10 for Graaff-Reinet), and SO 6, registers of slaves"
+        },
+        {
+          "title": "Archival source: The National Archives (UK), T 71, Office of Registry of Colonial Slaves and Slave Compensation Commission, via the Legacies of British Slavery database (compensation awards)"
         }
       ]
     },
@@ -1971,7 +2193,7 @@
       "name": "saf-persons",
       "path": "data/saf/saf_persons.csv",
       "title": "SAF persons",
-      "description": "One row per person born up to 1870 in the South African Families genealogical database (version of 10 February 2014). Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111.",
+      "description": "One row per person born up to 1870 in the South African Families genealogical database (version of 10 February 2014). Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111; and Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -2109,6 +2331,13 @@
         {
           "title": "Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111",
           "path": "https://doi.org/10.51964/hlcs11095"
+        },
+        {
+          "title": "Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284",
+          "path": "https://doi.org/10.1080/1081602X.2025.2478381"
+        },
+        {
+          "title": "Archival source: Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"
         }
       ]
     },
@@ -2116,7 +2345,7 @@
       "name": "saf-marriages",
       "path": "data/saf/saf_marriages.csv",
       "title": "SAF marriages",
-      "description": "One row per marriage of a principal, with the spouse's details (withheld where the spouse was born after 1870). principal_chdr_id is absent from saf_persons for 2,879 marriages whose principal was born after 1870. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111.",
+      "description": "One row per marriage of a principal, with the spouse's details (withheld where the spouse was born after 1870). principal_chdr_id is absent from saf_persons for 2,879 marriages whose principal was born after 1870. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111; and Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -2274,6 +2503,13 @@
         {
           "title": "Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111",
           "path": "https://doi.org/10.51964/hlcs11095"
+        },
+        {
+          "title": "Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284",
+          "path": "https://doi.org/10.1080/1081602X.2025.2478381"
+        },
+        {
+          "title": "Archival source: Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"
         }
       ]
     },
@@ -2281,7 +2517,7 @@
       "name": "saf-variables",
       "path": "data/saf/saf_variables.csv",
       "title": "SAF variable list",
-      "description": "Every variable of saf_persons and saf_marriages, its source column and meaning. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111.",
+      "description": "Every variable of saf_persons and saf_marriages, its source column and meaning. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111; and Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284.",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
@@ -2327,6 +2563,13 @@
         {
           "title": "Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111",
           "path": "https://doi.org/10.51964/hlcs11095"
+        },
+        {
+          "title": "Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284",
+          "path": "https://doi.org/10.1080/1081602X.2025.2478381"
+        },
+        {
+          "title": "Archival source: Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"
         }
       ]
     },
@@ -2334,7 +2577,7 @@
       "name": "saf-persons-parquet",
       "path": "data/saf/saf_persons.parquet",
       "title": "Parquet copy of saf_persons.csv",
-      "description": "The same table as saf_persons.csv, in Parquet (zstd), with column types. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111.",
+      "description": "The same table as saf_persons.csv, in Parquet (zstd), with column types. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111; and Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284.",
       "format": "parquet",
       "mediatype": "application/vnd.apache.parquet",
       "bytes": 15847444,
@@ -2343,6 +2586,13 @@
         {
           "title": "Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111",
           "path": "https://doi.org/10.51964/hlcs11095"
+        },
+        {
+          "title": "Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284",
+          "path": "https://doi.org/10.1080/1081602X.2025.2478381"
+        },
+        {
+          "title": "Archival source: Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"
         }
       ]
     },
@@ -2350,7 +2600,7 @@
       "name": "saf-marriages-parquet",
       "path": "data/saf/saf_marriages.parquet",
       "title": "Parquet copy of saf_marriages.csv",
-      "description": "The same table as saf_marriages.csv, in Parquet (zstd), with column types. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111.",
+      "description": "The same table as saf_marriages.csv, in Parquet (zstd), with column types. Cite: Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111; and Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284.",
       "format": "parquet",
       "mediatype": "application/vnd.apache.parquet",
       "bytes": 15233310,
@@ -2359,6 +2609,1238 @@
         {
           "title": "Cilliers, J. (2021). The South African Families database. Historical Life Course Studies 11: 97-111",
           "path": "https://doi.org/10.51964/hlcs11095"
+        },
+        {
+          "title": "Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. The History of the Family 30(2): 258-284",
+          "path": "https://doi.org/10.1080/1081602X.2025.2478381"
+        },
+        {
+          "title": "Archival source: Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"
+        }
+      ]
+    },
+    {
+      "name": "runaways-persons",
+      "path": "data/runaways/runaways_persons.csv",
+      "title": "Runaway advertisements",
+      "description": "One row per person named in a runaway advertisement in De Zuid Afrikaan or the Government Gazette, 1830-1842, from Bergemann's Harvard Dataverse deposit. Licensed CC BY-NC-SA 4.0. Cite: Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14; and Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 469414,
+      "hash": "f0444b601dc6f58b5dd63f3bc13e0652",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Repository identifier, never changed: RUN-, the newspaper (ZA or GG) and the reference number in Bergemann's dataset (RUN-ZA-001 is ZA1, RUN-GG-114a is GG114a)"
+          },
+          {
+            "name": "newspaper",
+            "type": "string",
+            "description": "De Zuid Afrikaan or the (Cape of Good Hope) Government Gazette"
+          },
+          {
+            "name": "publication_date",
+            "type": "date",
+            "description": "Date the advertisement was published"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name of the person who fled, as printed"
+          },
+          {
+            "name": "sex",
+            "type": "string",
+            "description": "M or F, as recorded"
+          },
+          {
+            "name": "age",
+            "type": "integer",
+            "description": "Age in years as stated in the advertisement"
+          },
+          {
+            "name": "flight_year",
+            "type": "integer",
+            "description": "Year of flight, where the advertisement states or implies it"
+          },
+          {
+            "name": "flight_month",
+            "type": "integer",
+            "description": "Month of flight (1-12)"
+          },
+          {
+            "name": "time_absconded",
+            "type": "string",
+            "description": "Time between flight and advertisement, as transcribed (y years, m months, w weeks, d days)"
+          },
+          {
+            "name": "ethnic_descriptor",
+            "type": "string",
+            "description": "Origin or ethnic description as printed, e.g. Mozambique, Cape, Prize Negro"
+          },
+          {
+            "name": "presents_as",
+            "type": "string",
+            "description": "Identity the person was said to pass as or resemble"
+          },
+          {
+            "name": "physical_description",
+            "type": "string",
+            "description": "Physical description"
+          },
+          {
+            "name": "other_description",
+            "type": "string",
+            "description": "Other traits or demeanour"
+          },
+          {
+            "name": "clothing",
+            "type": "string",
+            "description": "Clothing worn or taken"
+          },
+          {
+            "name": "items_taken",
+            "type": "string",
+            "description": "Other items taken"
+          },
+          {
+            "name": "skill_occupation",
+            "type": "string",
+            "description": "Skills, occupation and languages as printed"
+          },
+          {
+            "name": "intentions",
+            "type": "string",
+            "description": "The advertiser's supposition about where the person went or what they intended"
+          },
+          {
+            "name": "sightings",
+            "type": "string",
+            "description": "Sightings after flight"
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "description": "Location given in the advertisement, usually the advertiser's home or farm"
+          },
+          {
+            "name": "advertiser",
+            "type": "string",
+            "description": "Enslaver or person who placed the advertisement, as transcribed (surname, initials)"
+          },
+          {
+            "name": "reward",
+            "type": "string",
+            "description": "Reward as printed (Rd/Rds = rixdollars; pound sterling); editorial notes in brackets"
+          },
+          {
+            "name": "full_text",
+            "type": "string",
+            "description": "Transcription of the advertisement, with some shorthand; given once, on the first person, where one advertisement names several people"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14",
+          "path": "https://doi.org/10.14321/jsdp.6.1.0001"
+        },
+        {
+          "title": "Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review",
+          "path": "https://doi.org/10.1111/aehr.70034"
+        },
+        {
+          "title": "Source: Bergemann, K., Ekama, K. and Fourie, J. (2025). Cape Colony Runaway Advertisements, 1830-1842. Harvard Dataverse",
+          "path": "https://doi.org/10.7910/DVN/R1IAFM"
+        },
+        {
+          "title": "Archival source: De Zuid Afrikaan, issues 1-740 (1830-1842), and the Cape of Good Hope Government Gazette, issues 1251-1932 (1830-1842), from the collections of Stellenbosch University Library, supplemented by the National Library of South Africa, Cape Town, and HathiTrust (record 100931470)"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-NC-SA-4.0",
+          "title": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+          "path": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "runaways-variables",
+      "path": "data/runaways/runaways_variables.csv",
+      "title": "Runaway variable list",
+      "description": "Every variable of the runaways tables, its source column and meaning. Cite: Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14; and Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 2125,
+      "hash": "b93f9cdf277353e319c274a4e15fa6f4",
+      "schema": {
+        "fields": [
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Variable name"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Storage type"
+          },
+          {
+            "name": "source_column",
+            "type": "string",
+            "description": "Column of the source workbook the variable comes from ({n} is the marriage slot, 1-4)"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Meaning of the variable"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "variable"
+      },
+      "sources": [
+        {
+          "title": "Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14",
+          "path": "https://doi.org/10.14321/jsdp.6.1.0001"
+        },
+        {
+          "title": "Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review",
+          "path": "https://doi.org/10.1111/aehr.70034"
+        },
+        {
+          "title": "Source: Bergemann, K., Ekama, K. and Fourie, J. (2025). Cape Colony Runaway Advertisements, 1830-1842. Harvard Dataverse",
+          "path": "https://doi.org/10.7910/DVN/R1IAFM"
+        },
+        {
+          "title": "Archival source: De Zuid Afrikaan, issues 1-740 (1830-1842), and the Cape of Good Hope Government Gazette, issues 1251-1932 (1830-1842), from the collections of Stellenbosch University Library, supplemented by the National Library of South Africa, Cape Town, and HathiTrust (record 100931470)"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-NC-SA-4.0",
+          "title": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+          "path": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "runaways-persons-parquet",
+      "path": "data/runaways/runaways_persons.parquet",
+      "title": "Parquet copy of runaways_persons.csv",
+      "description": "The same table as runaways_persons.csv, in Parquet (zstd), with column types. Cite: Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14; and Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 434495,
+      "hash": "8da082083126f9aaab1534522f38fa8f",
+      "sources": [
+        {
+          "title": "Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842. Journal of Slavery and Data Preservation 6(1): 1-14",
+          "path": "https://doi.org/10.14321/jsdp.6.1.0001"
+        },
+        {
+          "title": "Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830-1838. Asia-Pacific Economic History Review",
+          "path": "https://doi.org/10.1111/aehr.70034"
+        },
+        {
+          "title": "Source: Bergemann, K., Ekama, K. and Fourie, J. (2025). Cape Colony Runaway Advertisements, 1830-1842. Harvard Dataverse",
+          "path": "https://doi.org/10.7910/DVN/R1IAFM"
+        },
+        {
+          "title": "Archival source: De Zuid Afrikaan, issues 1-740 (1830-1842), and the Cape of Good Hope Government Gazette, issues 1251-1932 (1830-1842), from the collections of Stellenbosch University Library, supplemented by the National Library of South Africa, Cape Town, and HathiTrust (record 100931470)"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-NC-SA-4.0",
+          "title": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+          "path": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "prices-goods",
+      "path": "data/prices/prices_goods.csv",
+      "title": "Auction price goods",
+      "description": "The 30 goods priced in the auction rolls, their asset type and class, and the Dutch terms searched for. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1221,
+      "hash": "85cbe9eafb22f698c1b3633cbe45ae60",
+      "schema": {
+        "fields": [
+          {
+            "name": "good",
+            "type": "string",
+            "description": "Name of the good; the key to good in the other two tables"
+          },
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "productive or household"
+          },
+          {
+            "name": "class",
+            "type": "string",
+            "description": "Class used in the paper: equipment, labour, livestock (productive); luxury, major, minor (household)"
+          },
+          {
+            "name": "dutch_terms",
+            "type": "string",
+            "description": "Dutch words searched for in the auction rolls to identify the good"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "good"
+      },
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-annual",
+      "path": "data/prices/prices_annual.csv",
+      "title": "Auction prices by year",
+      "description": "Median and mean unit price in rixdollars of each good sold at estate auctions, by year, 1718-1813. A derived series built from the MOOC10 auction rolls. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 55722,
+      "hash": "f9e905a6ab16b8b5cb67853cfe7e0933",
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Year of the auctions"
+          },
+          {
+            "name": "good",
+            "type": "string",
+            "description": "Good, as in prices_goods"
+          },
+          {
+            "name": "median_price",
+            "type": "number",
+            "description": "Median unit price in rixdollars of lots of the good sold that year"
+          },
+          {
+            "name": "mean_price",
+            "type": "number",
+            "description": "Mean unit price in rixdollars of lots of the good sold that year"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "year",
+          "good"
+        ],
+        "foreignKeys": [
+          {
+            "fields": "good",
+            "reference": {
+              "resource": "prices-goods",
+              "fields": "good"
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-auction-goods",
+      "path": "data/prices/prices_auction_goods.csv",
+      "title": "Goods sold at each auction",
+      "description": "Number of units of each of the 30 goods sold at each estate auction, 1718-1813; mooc_id matches the document's n attribute in the auctions XML. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 415986,
+      "hash": "927fd191e990c9a288bc26dda980161d",
+      "schema": {
+        "fields": [
+          {
+            "name": "mooc_id",
+            "type": "string",
+            "description": "Archival reference of the auction (MOOC10/volume.item); the document's n attribute in the auctions XML"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Year of the auction, as used in the paper"
+          },
+          {
+            "name": "good",
+            "type": "string",
+            "description": "Good, as in prices_goods"
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "description": "Number of units of the good sold at the auction; goods not sold there are omitted, so a missing row means zero"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "mooc_id",
+          "year",
+          "good"
+        ],
+        "foreignKeys": [
+          {
+            "fields": "good",
+            "reference": {
+              "resource": "prices-goods",
+              "fields": "good"
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-variables",
+      "path": "data/prices/prices_variables.csv",
+      "title": "Price variable list",
+      "description": "Every variable of the prices tables, its source column and meaning. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1418,
+      "hash": "037526f9e626b5ae88da3abdd89ac91d",
+      "schema": {
+        "fields": [
+          {
+            "name": "table",
+            "type": "string",
+            "description": "Table the variable belongs to"
+          },
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Variable name"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Storage type"
+          },
+          {
+            "name": "source_column",
+            "type": "string",
+            "description": "Column of the source workbook the variable comes from ({n} is the marriage slot, 1-4)"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Meaning of the variable"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "table",
+          "variable"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-goods-parquet",
+      "path": "data/prices/prices_goods.parquet",
+      "title": "Parquet copy of prices_goods.csv",
+      "description": "The same table as prices_goods.csv, in Parquet (zstd), with column types. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 1843,
+      "hash": "3e5c554dbf39079f2e47aecf5b345b3e",
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-annual-parquet",
+      "path": "data/prices/prices_annual.parquet",
+      "title": "Parquet copy of prices_annual.csv",
+      "description": "The same table as prices_annual.csv, in Parquet (zstd), with column types. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 39435,
+      "hash": "d8ac4620a387ed415e9b24100e24895d",
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "prices-auction-goods-parquet",
+      "path": "data/prices/prices_auction_goods.parquet",
+      "title": "Parquet copy of prices_auction_goods.csv",
+      "description": "The same table as prices_auction_goods.csv, in Parquet (zstd), with column types. Cite: Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 63122,
+      "hash": "802fba6c0a9adf252c2cbaa49ca8076b",
+      "sources": [
+        {
+          "title": "Walters, L., Schoots, J. and Fourie, J. (2026). Prices and living standards: evidence from Cape Colony auction rolls. Cliometrica",
+          "path": "https://doi.org/10.1007/s11698-026-00339-9"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"
+        }
+      ]
+    },
+    {
+      "name": "petition1779-signatories",
+      "path": "data/petition1779/petition1779_signatories.csv",
+      "title": "1779 petition signatories",
+      "description": "One row per signatory of the 1779 Cape Patriots petition (WCARS C 2665), in the order they signed. Cite: Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 15209,
+      "hash": "ad0a46a330ed7bc31fbc26c42ca1314a",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Repository identifier, never changed: PET- and the signatory's position on the petition (PET-001 signed first)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name as signed"
+          },
+          {
+            "name": "name_suffix",
+            "type": "string",
+            "description": "Patronymic or distinguishing suffix written after the name (Jansz, de Jonge, de Oude)"
+          },
+          {
+            "name": "rank",
+            "type": "string",
+            "description": "Rank or office given after the name: Burger, Heemraad, Burgerraad, militia and church offices; oud = former"
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Transcriber's note, e.g. signed with x"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University"
+        },
+        {
+          "title": "Source: Baartman, T. (2011). Fighting for the spoils: Cape burgerschap and faction disputes in Cape Town in the 1770s. PhD thesis, University of Cape Town"
+        },
+        {
+          "title": "Archival source: WCARS, Council of Policy (C, inventory 1/1), C 2665 (burgher complaints, 1716-1782), pp. 2-9"
+        }
+      ]
+    },
+    {
+      "name": "petition1779-variables",
+      "path": "data/petition1779/petition1779_variables.csv",
+      "title": "Petition variable list",
+      "description": "Every variable of the petition1779 tables, its source column and meaning. Cite: Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 529,
+      "hash": "8312a77637c7afe828ac9da837897d68",
+      "schema": {
+        "fields": [
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Variable name"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Storage type"
+          },
+          {
+            "name": "source_column",
+            "type": "string",
+            "description": "Column of the source workbook the variable comes from ({n} is the marriage slot, 1-4)"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Meaning of the variable"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "variable"
+      },
+      "sources": [
+        {
+          "title": "Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University"
+        },
+        {
+          "title": "Source: Baartman, T. (2011). Fighting for the spoils: Cape burgerschap and faction disputes in Cape Town in the 1770s. PhD thesis, University of Cape Town"
+        },
+        {
+          "title": "Archival source: WCARS, Council of Policy (C, inventory 1/1), C 2665 (burgher complaints, 1716-1782), pp. 2-9"
+        }
+      ]
+    },
+    {
+      "name": "petition1779-signatories-parquet",
+      "path": "data/petition1779/petition1779_signatories.parquet",
+      "title": "Parquet copy of petition1779_signatories.csv",
+      "description": "The same table as petition1779_signatories.csv, in Parquet (zstd), with column types. Cite: Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 15156,
+      "hash": "40adb80d2642cdfa7c17e540a0a87eb1",
+      "sources": [
+        {
+          "title": "Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University"
+        },
+        {
+          "title": "Source: Baartman, T. (2011). Fighting for the spoils: Cape burgerschap and faction disputes in Cape Town in the 1770s. PhD thesis, University of Cape Town"
+        },
+        {
+          "title": "Archival source: WCARS, Council of Policy (C, inventory 1/1), C 2665 (burgher complaints, 1716-1782), pp. 2-9"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-persons",
+      "path": "data/voortrekkers/voortrekkers_persons.csv",
+      "title": "Voortrekkers",
+      "description": "One row per trekker in the register transcribed from Visagie's Voortrekkerstamouers 1835-1845. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 309598,
+      "hash": "6884feba1b0e34dfc5715a8c9b5d071f",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Repository identifier, never changed: VTR- and the row in the source sheet less one (VTR-0001 is row 2)"
+          },
+          {
+            "name": "genealogical_number",
+            "type": "string",
+            "description": "Number in Visagie's register (b1c2d3...: a letter per generation and the birth order), as transcribed with any query marks; the progenitor's a1 is implied where absent"
+          },
+          {
+            "name": "surname",
+            "type": "string",
+            "description": "Surname as in the register"
+          },
+          {
+            "name": "first_names",
+            "type": "string",
+            "description": "First names as in the register, with nicknames in brackets and Sr./Jr."
+          },
+          {
+            "name": "birth_place",
+            "type": "string",
+            "description": "Place of birth"
+          },
+          {
+            "name": "birth_date",
+            "type": "string",
+            "description": "Date of birth: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "baptism_place",
+            "type": "string",
+            "description": "Place of baptism"
+          },
+          {
+            "name": "baptism_date",
+            "type": "string",
+            "description": "Date of baptism: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "death_place",
+            "type": "string",
+            "description": "Place of death"
+          },
+          {
+            "name": "death_date",
+            "type": "string",
+            "description": "Date of death: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839); dates Excel had stored as day numbers are converted"
+          },
+          {
+            "name": "ward",
+            "type": "string",
+            "description": "Ward (wyk) of residence before the Trek"
+          },
+          {
+            "name": "district",
+            "type": "string",
+            "description": "District of residence before the Trek"
+          },
+          {
+            "name": "trek_date",
+            "type": "string",
+            "description": "When the person left: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "trek_party",
+            "type": "string",
+            "description": "Leader or party the person trekked with, as written (spellings vary)"
+          },
+          {
+            "name": "trek_destination",
+            "type": "string",
+            "description": "Destination, as written (Natal, Transoranje, OVS, ...)"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Notes from the register, mostly in Afrikaans (battles, family ties)"
+          },
+          {
+            "name": "leaders",
+            "type": "string",
+            "description": "Marks trek leaders"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-marriages",
+      "path": "data/voortrekkers/voortrekkers_marriages.csv",
+      "title": "Voortrekker marriages",
+      "description": "One row per marriage of a trekker, with the spouse's details. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 264261,
+      "hash": "1a2594ef5a39575c13c2fb2f51de45a8",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Repository identifier, never changed: the person's chdr_id and -M{marriage_order}"
+          },
+          {
+            "name": "principal_chdr_id",
+            "type": "string",
+            "description": "chdr_id of the trekker in voortrekkers_persons"
+          },
+          {
+            "name": "marriage_order",
+            "type": "integer",
+            "description": "First to fifth marriage, from the block of columns in the sheet"
+          },
+          {
+            "name": "marriage_place",
+            "type": "string",
+            "description": "Place of marriage"
+          },
+          {
+            "name": "marriage_date",
+            "type": "string",
+            "description": "Date of marriage: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "spouse_first_names",
+            "type": "string",
+            "description": "Spouse's first names"
+          },
+          {
+            "name": "spouse_surname",
+            "type": "string",
+            "description": "Spouse's surname"
+          },
+          {
+            "name": "spouse_genealogical_number",
+            "type": "string",
+            "description": "Spouse's number in the register, where the spouse is also a descendant"
+          },
+          {
+            "name": "spouse_birth_place",
+            "type": "string",
+            "description": "Spouse's place of birth"
+          },
+          {
+            "name": "spouse_birth_date",
+            "type": "string",
+            "description": "Spouse's date of birth: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "spouse_baptism_place",
+            "type": "string",
+            "description": "Spouse's place of baptism"
+          },
+          {
+            "name": "spouse_baptism_date",
+            "type": "string",
+            "description": "Spouse's date of baptism: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+          },
+          {
+            "name": "spouse_death_place",
+            "type": "string",
+            "description": "Spouse's place of death"
+          },
+          {
+            "name": "spouse_death_date",
+            "type": "string",
+            "description": "Spouse's date of death: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839); Excel day numbers converted"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id",
+        "foreignKeys": [
+          {
+            "fields": "principal_chdr_id",
+            "reference": {
+              "resource": "voortrekkers-persons",
+              "fields": "chdr_id"
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-realignments",
+      "path": "data/voortrekkers/voortrekkers_realignments.csv",
+      "title": "Voortrekker realignments",
+      "description": "Rows of the source sheet in which a block of dates and places was typed in the wrong columns, and how it was read. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 3682,
+      "hash": "9bca6a71520ee9d3ab9945003a9c69ac",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "chdr_id of the trekker"
+          },
+          {
+            "name": "source_row",
+            "type": "integer",
+            "description": "Row in the source sheet"
+          },
+          {
+            "name": "change",
+            "type": "string",
+            "description": "Which block (person, m1-m5) was read from other columns, and how"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-variables",
+      "path": "data/voortrekkers/voortrekkers_variables.csv",
+      "title": "Voortrekker variable list",
+      "description": "Every variable of the voortrekkers tables, its source column and meaning. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4437,
+      "hash": "dfc22dc608ed67e097b8ba40f43be7c3",
+      "schema": {
+        "fields": [
+          {
+            "name": "table",
+            "type": "string",
+            "description": "Table the variable belongs to"
+          },
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Variable name"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Storage type"
+          },
+          {
+            "name": "source_column",
+            "type": "string",
+            "description": "Column of the source workbook the variable comes from ({n} is the marriage slot, 1-4)"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Meaning of the variable"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": [
+          "table",
+          "variable"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-persons-parquet",
+      "path": "data/voortrekkers/voortrekkers_persons.parquet",
+      "title": "Parquet copy of voortrekkers_persons.csv",
+      "description": "The same table as voortrekkers_persons.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 239890,
+      "hash": "ff6680c42a4d1b61f9ad35fa7dad40ea",
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "voortrekkers-marriages-parquet",
+      "path": "data/voortrekkers/voortrekkers_marriages.parquet",
+      "title": "Parquet copy of voortrekkers_marriages.csv",
+      "description": "The same table as voortrekkers_marriages.csv, in Parquet (zstd), with column types. Cite: Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming).",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 251934,
+      "hash": "06b351999e4cbbe07be5ea93e6818dc1",
+      "sources": [
+        {
+          "title": "Fourie, J. and Links, C. (2026). Selection into the Great Trek. European Review of Economic History (forthcoming)"
+        },
+        {
+          "title": "Source: Visagie, J. C. (2011). Voortrekkerstamouers 1835-1845. 2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000), Protea Boekhuis"
+        },
+        {
+          "title": "Archival source: Visagie, Voortrekkerstamouers 1835-1845, compiled from the Cape officials' lists of emigrants, other archival sources and GISA genealogies; the book gives the sources of each entry"
+        }
+      ]
+    },
+    {
+      "name": "almanacs-entries",
+      "path": "data/almanacs/almanacs_entries.csv",
+      "title": "Cape almanac directory entries",
+      "description": "One row per entry in the directories of the African Court Calendar, Cape Advertiser, Cape Almanac and Transvaal Almanac, 1813-1891. Cite: Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 11264274,
+      "hash": "3b39e3eba1d4fd44b5f3612c42bea720",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Repository identifier, never changed: ALM-, the publication (ACC African Court Calendar, CAD Cape Advertiser, CAL Cape Almanac, TVL Transvaal Almanac), the edition year and the entry's position in that edition's table (ALM-CAL-1838-00001)"
+          },
+          {
+            "name": "publication",
+            "type": "string",
+            "description": "African Court Calendar (1813-1827), Cape Advertiser (1821), Cape Almanac (1828-1891) or Transvaal Almanac (1881)"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Year of the edition"
+          },
+          {
+            "name": "surname",
+            "type": "string",
+            "description": "Surname, or the name of a firm or institution"
+          },
+          {
+            "name": "first_names",
+            "type": "string",
+            "description": "First names or initials"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Title or status as printed: Mrs, Widow, Rev., Captain, Junior, ..."
+          },
+          {
+            "name": "occupation",
+            "type": "string",
+            "description": "Occupation, office or business as printed"
+          },
+          {
+            "name": "address",
+            "type": "string",
+            "description": "Street address as printed"
+          },
+          {
+            "name": "section",
+            "type": "string",
+            "description": "Heading under which the entry is printed (town, suburb or section), where the transcriber recorded it (1838, 1847, 1863, 1868, 1875, 1881 Transvaal)"
+          },
+          {
+            "name": "erf_number",
+            "type": "string",
+            "description": "Erf (plot) number, 1881 Transvaal Almanac only"
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Transcriber's notes, often the heading of the list the entry comes from"
+          },
+          {
+            "name": "image",
+            "type": "string",
+            "description": "File name of the page image the entry was transcribed from"
+          },
+          {
+            "name": "transcriber",
+            "type": "string",
+            "description": "Volunteer who transcribed the entry"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435",
+          "path": "https://doi.org/10.1080/03057070.2021.1904751"
+        },
+        {
+          "title": "Archival source: The printed almanacs and directories (African Court Calendar, Cape Almanac and others); a full set of the Cape directories and almanacs, 1800-1902, is held by the National Library of South Africa, Cape Town; editions were transcribed from copies at WCARS and the National Library"
+        }
+      ]
+    },
+    {
+      "name": "almanacs-removed-repeats",
+      "path": "data/almanacs/almanacs_removed_repeats.csv",
+      "title": "Almanac entries removed as repeats",
+      "description": "Entries typed twice (identical in every column within an edition): the removed entry and the published entry it repeats. Cite: Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 17344,
+      "hash": "d5045b97a35df166dfc0d359eefd6712",
+      "schema": {
+        "fields": [
+          {
+            "name": "chdr_id",
+            "type": "string",
+            "description": "Identifier the removed entry would have had"
+          },
+          {
+            "name": "repeats",
+            "type": "string",
+            "description": "chdr_id of the published entry it repeats"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "chdr_id"
+      },
+      "sources": [
+        {
+          "title": "Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435",
+          "path": "https://doi.org/10.1080/03057070.2021.1904751"
+        },
+        {
+          "title": "Archival source: The printed almanacs and directories (African Court Calendar, Cape Almanac and others); a full set of the Cape directories and almanacs, 1800-1902, is held by the National Library of South Africa, Cape Town; editions were transcribed from copies at WCARS and the National Library"
+        }
+      ]
+    },
+    {
+      "name": "almanacs-variables",
+      "path": "data/almanacs/almanacs_variables.csv",
+      "title": "Almanac variable list",
+      "description": "Every variable of the almanacs tables, its source column and meaning. Cite: Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 1526,
+      "hash": "224780265200e9cd660a295df515499f",
+      "schema": {
+        "fields": [
+          {
+            "name": "variable",
+            "type": "string",
+            "description": "Variable name"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Storage type"
+          },
+          {
+            "name": "source_column",
+            "type": "string",
+            "description": "Column of the source workbook the variable comes from ({n} is the marriage slot, 1-4)"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "description": "Meaning of the variable"
+          }
+        ],
+        "missingValues": [
+          ""
+        ],
+        "primaryKey": "variable"
+      },
+      "sources": [
+        {
+          "title": "Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435",
+          "path": "https://doi.org/10.1080/03057070.2021.1904751"
+        },
+        {
+          "title": "Archival source: The printed almanacs and directories (African Court Calendar, Cape Almanac and others); a full set of the Cape directories and almanacs, 1800-1902, is held by the National Library of South Africa, Cape Town; editions were transcribed from copies at WCARS and the National Library"
+        }
+      ]
+    },
+    {
+      "name": "almanacs-entries-parquet",
+      "path": "data/almanacs/almanacs_entries.parquet",
+      "title": "Parquet copy of almanacs_entries.csv",
+      "description": "The same table as almanacs_entries.csv, in Parquet (zstd), with column types. Cite: Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435.",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "bytes": 4807255,
+      "hash": "616758888fa5319c5193a5dcd00f0d22",
+      "sources": [
+        {
+          "title": "Ross, R. and Martin, L. C. (2021). Accommodation and resistance: The housing of Cape Town's enslaved and freed population before and after emancipation. Journal of Southern African Studies 47(3): 417-435",
+          "path": "https://doi.org/10.1080/03057070.2021.1904751"
+        },
+        {
+          "title": "Archival source: The printed almanacs and directories (African Court Calendar, Cape Almanac and others); a full set of the Cape directories and almanacs, 1800-1902, is held by the National Library of South Africa, Cape Town; editions were transcribed from copies at WCARS and the National Library"
         }
       ]
     },
@@ -2412,6 +3894,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2469,6 +3954,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2486,6 +3974,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2503,6 +3994,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2520,6 +4014,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2537,6 +4034,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2554,6 +4054,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2571,6 +4074,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2588,6 +4094,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2605,6 +4114,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2622,6 +4134,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2639,6 +4154,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2656,6 +4174,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2673,6 +4194,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2690,6 +4214,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2707,6 +4234,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2724,6 +4254,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2741,6 +4274,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2758,6 +4294,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2775,6 +4314,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2792,6 +4334,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2809,6 +4354,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2826,6 +4374,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2843,6 +4394,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2860,6 +4414,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2877,6 +4434,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2894,6 +4454,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2911,6 +4474,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2928,6 +4494,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2945,6 +4514,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2962,6 +4534,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2979,6 +4554,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -2996,6 +4574,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3013,6 +4594,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3030,6 +4614,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3047,6 +4634,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3064,6 +4654,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3081,6 +4674,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3098,6 +4694,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3115,6 +4714,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3132,6 +4734,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3149,6 +4754,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3166,6 +4774,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3183,6 +4794,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3200,6 +4814,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3217,6 +4834,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3234,6 +4854,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3251,6 +4874,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3268,6 +4894,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3285,6 +4914,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3302,6 +4934,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3319,6 +4954,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3336,6 +4974,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3353,6 +4994,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3370,6 +5014,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3387,6 +5034,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3404,6 +5054,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3421,6 +5074,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3438,6 +5094,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3455,6 +5114,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3472,6 +5134,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3489,6 +5154,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3506,6 +5174,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3523,6 +5194,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3540,6 +5214,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3557,6 +5234,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3574,6 +5254,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3591,6 +5274,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3608,6 +5294,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3625,6 +5314,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3642,6 +5334,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3659,6 +5354,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3676,6 +5374,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3693,6 +5394,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3710,6 +5414,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3727,6 +5434,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3744,6 +5454,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
     },
@@ -3797,6 +5510,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3840,6 +5556,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3857,6 +5576,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3874,6 +5596,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3891,6 +5616,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3908,6 +5636,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3925,6 +5656,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3942,6 +5676,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3959,6 +5696,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3976,6 +5716,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -3993,6 +5736,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4010,6 +5756,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4027,6 +5776,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4044,6 +5796,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4061,6 +5816,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4078,6 +5836,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4095,6 +5856,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4112,6 +5876,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4129,6 +5896,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4146,6 +5916,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4163,6 +5936,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4180,6 +5956,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4197,6 +5976,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4214,6 +5996,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4231,6 +6016,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4248,6 +6036,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4265,6 +6056,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4282,6 +6076,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4299,6 +6096,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4316,6 +6116,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4333,6 +6136,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4350,6 +6156,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4367,6 +6176,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4384,6 +6196,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4401,6 +6216,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4418,6 +6236,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4435,6 +6256,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4452,6 +6276,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4469,6 +6296,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4486,6 +6316,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4503,6 +6336,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4520,6 +6356,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4537,6 +6376,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     },
@@ -4554,6 +6396,9 @@
         {
           "title": "Fourie, J., Liebenberg, H., Schoots, J. and van der Linde, P. (2025). Auction records, consumer culture and social networks in the Cape Colony, 1701-1825. South African Journal of Cultural History 39(1): 27-49",
           "path": "https://doi.org/10.54272/sach.2025.v39n1a2"
+        },
+        {
+          "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"
         }
       ]
     }

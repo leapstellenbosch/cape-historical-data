@@ -1,9 +1,10 @@
 {
   "title": "Cape Historical Data Repository",
   "upload_type": "dataset",
-  "version": "1.0",
+  "version": "1.1",
   "license": "cc-by-4.0",
-  "description": "<p>Five collections of records on the Cape Colony, 1650–1850, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University: cleaned tables of the opgaaf tax censuses (1660–1844, ten districts; 325,628 tax units), the 1834 slave emancipation records (36,417 records) and the South African Families genealogies (213,953 people born up to 1870 and 153,568 marriages), in CSV and Parquet; and the transcription XML of the Orphan Chamber probate inventories (MOOC8; 5,953 documents, 1673–1844) and estate auction rolls (MOOC10; 3,266 auctions, 1691–1834). Every file and column is described in the collections' READMEs and in datapackage.json.</p><p>Users must cite the paper(s) for each collection they use, listed in the README and below, and this release.</p>",
+  "description": "<p>Records on the Cape Colony, 1660-1891, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University. Cleaned tables (CSV and Parquet) of the opgaaf tax censuses (1660-1844, ten districts; 325,628 tax units), the 1834 slave emancipation records (36,417 records), the South African Families genealogies (213,953 people born up to 1870 and 153,568 marriages), runaway slave advertisements (881 people, 1830-1842), the 1779 Cape Patriots petition (404 signatories), the Voortrekker register (2,313 trekkers and 2,978 marriages) and the Cape almanac directories (97,391 entries, 1813-1891); yearly prices of 30 goods sold at estate auctions (1718-1813); and the transcription XML of the Orphan Chamber probate inventories (MOOC8; 5,953 documents, 1673-1844) and estate auction rolls (MOOC10; 3,266 auctions, 1691-1834). Every file and column is described in the collections' READMEs and in datapackage.json.<\/p><p>Users must cite the paper(s) for each collection they use, listed in the README and below, and this release. The runaway advertisements are released under CC BY-NC-SA 4.0, the licence of their original deposit; everything else is CC BY 4.0.<\/p><p>Most of the records are transcriptions of documents held by the Western Cape Archives and Records Service, Cape Town (opgaafrollen, series J; Slave Office, SO 6 and SO 20; Master of the Orphan Chamber, MOOC 8 and MOOC 10; Council of Policy, C 2665), with early tax returns from the Nationaal Archief, The Hague (VOC archive, 1.04.02); the README lists the archival source of each collection.<\/p><p>The transcription was funded by Riksbankens Jubileumsfond (the Bank of Sweden Tercentenary Foundation) through the Cape of Good Hope Panel project, 'The establishment, growth and legacy of a settler colony: Quantitative panel studies of the political economy of Cape Colony' (grant M20-0041).<\/p>",
+  "notes": "The transcription was funded by Riksbankens Jubileumsfond (the Bank of Sweden Tercentenary Foundation) through the Cape of Good Hope Panel project, 'The establishment, growth and legacy of a settler colony: Quantitative panel studies of the political economy of Cape Colony' (grant M20-0041).",
   "creators": [
     {
       "name": "Fourie, Johan",
@@ -12,6 +13,14 @@
     {
       "name": "Green, Erik",
       "affiliation": "Stellenbosch University; Lund University"
+    },
+    {
+      "name": "Bergemann, Karl",
+      "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Brown, Gabriel",
+      "affiliation": "Stellenbosch University"
     },
     {
       "name": "Burger, Christiaan",
@@ -42,12 +51,28 @@
       "affiliation": "Tracing History Trust"
     },
     {
+      "name": "Links, Calumet",
+      "affiliation": "Stellenbosch University"
+    },
+    {
       "name": "Martin, Lisa-Cheree",
       "affiliation": "Stellenbosch University"
     },
     {
+      "name": "Martins, Igor",
+      "affiliation": "Lund University"
+    },
+    {
+      "name": "McCants, Anne E.",
+      "affiliation": "Massachusetts Institute of Technology"
+    },
+    {
       "name": "Pretorius, Jan-Hendrik",
       "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Rijpma, Auke",
+      "affiliation": "Utrecht University"
     },
     {
       "name": "Ross, Robert",
@@ -64,26 +89,14 @@
     {
       "name": "von Fintel, Dieter",
       "affiliation": "Stellenbosch University"
+    },
+    {
+      "name": "Walters, Leoné",
+      "affiliation": "University of Cape Town"
     }
   ],
-  "keywords": [
-    "Cape Colony",
-    "economic history",
-    "tax censuses",
-    "opgaafrollen",
-    "slavery",
-    "emancipation",
-    "genealogy",
-    "probate inventories",
-    "auctions",
-    "South Africa"
-  ],
+  "keywords": ["Cape Colony", "economic history", "tax censuses", "opgaafrollen", "slavery", "emancipation", "runaway slaves", "genealogy", "Great Trek", "probate inventories", "auctions", "prices", "petitions", "directories", "South Africa"],
   "related_identifiers": [
-    {
-      "identifier": "10.54272/sach.2025.v39n1a2",
-      "relation": "isDocumentedBy",
-      "scheme": "doi"
-    },
     {
       "identifier": "10.1080/1081602X.2018.1509367",
       "relation": "isDocumentedBy",
@@ -95,7 +108,17 @@
       "scheme": "doi"
     },
     {
+      "identifier": "10.1080/01615440.2018.1517030",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
       "identifier": "10.1111/j.1468-0289.2012.00662.x",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.54272/sach.2025.v39n1a2",
       "relation": "isDocumentedBy",
       "scheme": "doi"
     },
@@ -105,7 +128,42 @@
       "scheme": "doi"
     },
     {
+      "identifier": "10.1080/1081602X.2025.2478381",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
       "identifier": "10.1016/j.eeh.2021.101390",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.eeh.2022.101506",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.14321/jsdp.6.1.0001",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1111/aehr.70034",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.7910/DVN/R1IAFM",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s11698-026-00339-9",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1080/03057070.2021.1904751",
       "relation": "isDocumentedBy",
       "scheme": "doi"
     }

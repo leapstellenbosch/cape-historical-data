@@ -1,0 +1,23 @@
+variable,type,source_column,description
+chdr_id,character,NUMBER,"Repository identifier, never changed: RUN-, the newspaper (ZA or GG) and the reference number in Bergemann's dataset (RUN-ZA-001 is ZA1, RUN-GG-114a is GG114a)"
+newspaper,character,SOURCE,De Zuid Afrikaan or the (Cape of Good Hope) Government Gazette
+publication_date,date,FULL DATE,Date the advertisement was published
+name,character,RUNAWAY NAME,"Name of the person who fled, as printed"
+sex,character,SEX,"M or F, as recorded"
+age,integer,AGE,Age in years as stated in the advertisement
+flight_year,integer,FLIGHT YEAR,"Year of flight, where the advertisement states or implies it"
+flight_month,integer,FLIGHT MONTH,Month of flight (1-12)
+time_absconded,character,TOTAL TIME ABSCONDED (TTA),"Time between flight and advertisement, as transcribed (y years, m months, w weeks, d days)"
+ethnic_descriptor,character,ETHNIC DESCIPTOR,"Origin or ethnic description as printed, e.g. Mozambique, Cape, Prize Negro"
+presents_as,character,RESEMBLANCE/PRESENTS AS,Identity the person was said to pass as or resemble
+physical_description,character,PHYSICAL DESCRIPTORS,Physical description
+other_description,character,NON-PHYSICAL DESCRIPTORS,Other traits or demeanour
+clothing,character,CLOTHING,Clothing worn or taken
+items_taken,character,OTHER ITEMS,Other items taken
+skill_occupation,character,SKILL/OCCUPATION,"Skills, occupation and languages as printed"
+intentions,character,INTENTION/SUPPOSITIONS,The advertiser's supposition about where the person went or what they intended
+sightings,character,ACTUAL SIGHTINGS,Sightings after flight
+location,character,LOCATION DETAIL,"Location given in the advertisement, usually the advertiser's home or farm"
+advertiser,character,ENSLAVER/ADVERTISER,"Enslaver or person who placed the advertisement, as transcribed (surname, initials)"
+reward,character,REWARD OFFERED,Reward as printed (Rd/Rds = rixdollars; pound sterling); editorial notes in brackets
+full_text,character,FULL TEXT,"Transcription of the advertisement, with some shorthand; given once, on the first person, where one advertisement names several people"

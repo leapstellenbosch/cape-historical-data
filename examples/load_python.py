@@ -67,3 +67,29 @@ roll = ET.parse("data/auctions/xml/MOOC10_vol25.xml").getroot()
 sale = next(d for d in roll.findall("./body/div") if d.get("n") == "MOOC10/25.2")
 lots = [["".join(c.itertext()).strip() for c in row.findall("./cell")] for row in sale.iter("row")]
 print(lots[:5])
+
+# ---- Runaway advertisements (licence CC BY-NC-SA 4.0) ----
+runaways = pd.read_parquet("data/runaways/runaways_persons.parquet")
+print(runaways.groupby("newspaper").size())
+
+# ---- Auction prices: join the yearly prices to the goods ----
+goods = pd.read_csv("data/prices/prices_goods.csv")
+prices = pd.read_csv("data/prices/prices_annual.csv").merge(goods, on="good", how="left")
+print(prices[prices.good == "slaves"][["year", "median_price", "mean_price"]].tail())
+# The goods counted at each auction join to the auction rolls on mooc_id
+sold = pd.read_csv("data/prices/prices_auction_goods.csv")
+
+# ---- 1779 petition ----
+petition = pd.read_csv("data/petition1779/petition1779_signatories.csv", keep_default_na=False, na_values=[""])
+print(petition["rank"].value_counts().head())
+
+# ---- Voortrekkers ----
+# Dates are ISO text where they could be read, otherwise as transcribed
+trekkers = pd.read_csv("data/voortrekkers/voortrekkers_persons.csv", dtype=str, keep_default_na=False, na_values=[""])
+trek_marriages = pd.read_csv("data/voortrekkers/voortrekkers_marriages.csv", dtype=str, keep_default_na=False, na_values=[""])
+trekkers["birth_year"] = trekkers.birth_date.str.extract(r"^(1[6-9]\d{2})", expand=False).astype("Int64")
+print(trekkers.trek_destination.value_counts().head())
+
+# ---- Almanac directories ----
+almanacs = pd.read_parquet("data/almanacs/almanacs_entries.parquet")
+print(almanacs.groupby(["publication", "year"]).size().head())

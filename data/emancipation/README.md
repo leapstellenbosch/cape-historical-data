@@ -12,7 +12,20 @@ record is linked to other collections.
 **Cite:** Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021), "When Cape
 slavery ended: Introducing a new slave emancipation dataset", *Explorations in
 Economic History* 81, 101390,
-doi:[10.1016/j.eeh.2021.101390](https://doi.org/10.1016/j.eeh.2021.101390).
+doi:[10.1016/j.eeh.2021.101390](https://doi.org/10.1016/j.eeh.2021.101390); and
+Martins, I., Cilliers, J. and Fourie, J. (2023), "Legacies of loss: The health
+outcomes of slaveholder compensation in the British Cape Colony", *Explorations
+in Economic History* 89, 101506,
+doi:[10.1016/j.eeh.2022.101506](https://doi.org/10.1016/j.eeh.2022.101506).
+
+**Archival source:** the Western Cape Archives and Records Service (WCARS), Cape Town, records of the Slave Office (SO, WCARS
+inventory 1/21): **SO 20**, Slave Compensation Office, which holds the
+valuation lists of 1834 by district (for example SO 20/10, Graaff-Reinet),
+and **SO 6**, the registers of slaves (1816–1834), from which missing lists
+were reconstructed. The compensation awards come from the Legacies of British
+Slavery database (University College London), which draws on The National
+Archives (UK), **T 71**, records of the Office of Registry of Colonial Slaves
+and Slave Compensation Commission.
 
 ## Files
 

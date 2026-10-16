@@ -1,0 +1,31 @@
+good,asset,class,dutch_terms
+horse_cart,productive,equipment,"kar, paarde kar"
+horses,productive,livestock,paarden
+plough,productive,equipment,ploegen
+wagons,productive,equipment,waagen
+slaves,productive,labour,slaven
+cattle,productive,livestock,"kalf, os, koeijen, bul, beesten"
+sheep,productive,livestock,schapen
+art_products,household,luxury,schilderijen
+books,household,luxury,"boeken, bijbel"
+china,household,luxury,porcelijn
+clocks,household,luxury,"klok, staande horologie"
+coatrack,household,luxury,kapstok
+jewellery,household,luxury,"oorkrabben, ring"
+violin,household,luxury,viool
+watches,household,luxury,zak horologie
+balance,household,major,"balans, schalen (en gewigt)"
+beds,household,major,"kadel, ledekant, bed"
+chairs,household,major,stoelen (excluding chairs with canopies)
+guns,household,major,"schietgeweer, snaphaan, pistoolen"
+irons,household,major,strijkeijser
+oven,household,major,(voet) stoof
+pot,household,major,pot
+tables,household,major,tafel
+buckets,household,minor,emmer
+cups,household,minor,kopjes
+firetongs,household,minor,vuurtang
+hammers,household,minor,hamer
+lamps,household,minor,"hanglamp, lantaarn"
+plates,household,minor,tafelborden
+utensils,household,minor,"lepel, vorken, messen"

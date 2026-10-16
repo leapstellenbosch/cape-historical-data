@@ -8,6 +8,9 @@ crops, vines, wine and tax. This collection holds **325,628 tax units** and
 Clanwilliam, George, Graaff-Reinet, Stellenbosch, Swellendam, Tulbagh,
 Uitenhage and Worcester.
 
+The opgaaf were transcribed in the Cape of Good Hope Panel project, funded by
+Riksbankens Jubileumsfond (grant M20-0041).
+
 These are repeated annual observations of declarations. They are not counts of
 unique people, and no person or household is linked across years.
 
@@ -16,7 +19,18 @@ doi:[10.1080/1081602X.2018.1509367](https://doi.org/10.1080/1081602X.2018.150936
 and Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J.,
 Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024),
 *South African Historical Journal*,
-doi:[10.1080/02582473.2025.2500410](https://doi.org/10.1080/02582473.2025.2500410).
+doi:[10.1080/02582473.2025.2500410](https://doi.org/10.1080/02582473.2025.2500410),
+and Rijpma, A., Cilliers, J. and Fourie, J. (2020), "Record linkage in the Cape
+of Good Hope Panel", *Historical Methods* 53(2): 112–129,
+doi:[10.1080/01615440.2018.1517030](https://doi.org/10.1080/01615440.2018.1517030).
+
+**Archival source:** the original returns are held by the Western Cape Archives and Records Service (WCARS), Cape Town, in
+the opgaafrollen (returns for taxation purposes), series **J** (WCARS
+inventory 1/5), volumes J 1 to J 438. Returns not preserved in Cape Town,
+mostly before 1764, were transcribed from the copies sent to the Netherlands,
+now in the **Nationaal Archief, The Hague**, archive of the Dutch East India
+Company (VOC), 1.04.02, inventory numbers 3994 to 4276. The volume or
+inventory number of every district-year is in `opgaaf_archival_references.csv`.
 
 ## Files
 
@@ -28,6 +42,7 @@ doi:[10.1080/02582473.2025.2500410](https://doi.org/10.1080/02582473.2025.250041
 | `opgaaf_variables.csv` | Every variable: type, meaning, population group, sex, age limits |
 | `opgaaf_schema_registry.csv` | Every original column header in every sheet, the variable it maps to and the confidence of the mapping |
 | `opgaaf_quality_flags.csv` | Cell- and row-level warnings and exclusions |
+| `opgaaf_archival_references.csv` | The archive and reference (WCARS volume or VOC inventory number) of the original return of each district and year |
 | `opgaaf_corrections_log.csv` | Every correction or interpretation applied to the transcription |
 
 The tables are parsimonious: no column is empty, constant, a copy of another,

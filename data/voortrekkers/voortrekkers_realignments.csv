@@ -1,0 +1,75 @@
+chdr_id,source_row,change
+VTR-0057,58,person: death read 1 column(s) left
+VTR-0067,68,m1: number read 1 column(s) left
+VTR-0106,107,m2: bplace read 1 column(s) right
+VTR-0174,175,person: tplace read 1 column(s) right
+VTR-0245,246,m2: first to number read 2 column(s) left
+VTR-0271,272,m2: first to surname read 1 column(s) left
+VTR-0366,367,m2: birth to bapt read 1 column(s) left
+VTR-0368,369,m1: birth read 2 column(s) left
+VTR-0517,518,m2: birth to bapt read 1 column(s) left
+VTR-0519,520,m1: bapt read 1 column(s) left
+VTR-0520,521,m2: bplace read 1 column(s) left
+VTR-0523,524,m3: read from columns 49-55
+VTR-0528,529,m3: read from columns 49-55
+VTR-0673,674,m1: death read 1 column(s) left
+VTR-0690,691,person: birth read 1 column(s) left
+VTR-0702,703,m2: number read 1 column(s) left
+VTR-0704,705,m1: number read 1 column(s) left
+VTR-0705,706,m1: dplace read 1 column(s) right
+VTR-0807,808,m1: death read 1 column(s) left
+VTR-0811,812,m2: birth read 1 column(s) left
+VTR-0819,820,m2: first to surname read 1 column(s) left
+VTR-0882,883,m1: bapt read 1 column(s) left
+VTR-0887,888,m1: bapt read 1 column(s) left
+VTR-0897,898,m2: first to surname read 1 column(s) left
+VTR-0909,910,m3: read from columns 49-55
+VTR-0921,922,person: death read 1 column(s) left
+VTR-0923,924,m1: first read 1 column(s) left
+VTR-0979,980,m2: birth read 1 column(s) left
+VTR-1002,1003,m1: dplace to death read 1 column(s) left
+VTR-1042,1043,m1: birth read 1 column(s) left
+VTR-1048,1049,m2: bapt read 1 column(s) left
+VTR-1084,1085,m1: birth read 1 column(s) left
+VTR-1156,1157,person: birth read 1 column(s) left
+VTR-1195,1196,m2: first read 1 column(s) left
+VTR-1317,1318,m3: read from columns 49-60; m4: read from columns 61-66
+VTR-1318,1319,person: death read 1 column(s) left
+VTR-1359,1360,m3: read from columns 49-55
+VTR-1366,1367,m1: bplace to birth read 1 column(s) right
+VTR-1419,1420,m1: bplace to birth read 1 column(s) right
+VTR-1465,1466,m1: bapt to death read 1 column(s) left
+VTR-1505,1506,m2: bapt read 1 column(s) left
+VTR-1525,1526,person: bapt read 1 column(s) left
+VTR-1582,1583,m3: read from columns 51-59
+VTR-1584,1585,m3: read from columns 49-59
+VTR-1615,1616,m4: read from columns 60-63
+VTR-1678,1679,m2: birth read 1 column(s) left
+VTR-1695,1696,m1: bapt read 1 column(s) left
+VTR-1714,1715,m1: bapt read 1 column(s) left
+VTR-1735,1736,m3: read from columns 49-58
+VTR-1748,1749,m2: m_date read 1 column(s) right
+VTR-1769,1770,person: death read 1 column(s) left
+VTR-1777,1778,m1: birth read 2 column(s) left
+VTR-1787,1788,m3: read from columns 50-58; m4: read from columns 61-65
+VTR-1794,1795,m4: read from columns 60-64
+VTR-1809,1810,m3: read from columns 49-55
+VTR-1883,1884,m3: read from columns 51-57
+VTR-1949,1950,m2: first to surname read 1 column(s) left
+VTR-1980,1981,m4: read from columns 61-63
+VTR-1982,1983,m2: bapt read 1 column(s) left
+VTR-2003,2004,m1: birth read 1 column(s) left
+VTR-2008,2009,m1: birth read 1 column(s) left
+VTR-2012,2013,m1: number read 1 column(s) right
+VTR-2017,2018,m1: birth read 1 column(s) left
+VTR-2031,2032,m3: read from columns 50-57
+VTR-2050,2051,m2: birth read 1 column(s) left
+VTR-2108,2109,m3: read from columns 51-59; m4: read from columns 62-68
+VTR-2128,2129,m3: read from columns 49-59
+VTR-2148,2149,m3: read from columns 51-59; m4: read from columns 62-63
+VTR-2168,2169,m4: read from columns 62-63
+VTR-2198,2199,m3: read from columns 49-55
+VTR-2208,2209,m3: read from columns 51-59; m4: read from columns 60-68
+VTR-2227,2228,m3: read from columns 50-59
+VTR-2269,2270,m3: read from columns 49-59
+VTR-2305,2306,m2: death read 1 column(s) left; m3: death read 1 column(s) right (by hand; the fragment in row 2703 confirms it)

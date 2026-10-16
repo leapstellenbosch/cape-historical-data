@@ -3,9 +3,9 @@ message: If you use these data, cite the paper(s) for each collection you use (s
   README and references below) and this release.
 type: dataset
 title: Cape Historical Data Repository
-version: '1.0'
+version: '1.1'
 doi: 10.5281/zenodo.23397436
-date-released: '2026-10-15'
+date-released: '2026-10-16'
 identifiers:
 - type: doi
   value: 10.5281/zenodo.23397436
@@ -13,7 +13,9 @@ identifiers:
 - type: doi
   value: 10.5281/zenodo.23397437
   description: Version 1.0
-license: CC-BY-4.0
+license:
+- CC-BY-4.0
+- CC-BY-NC-SA-4.0
 repository-code: https://github.com/leapstellenbosch/cape-historical-data
 keywords:
 - Cape Colony
@@ -21,9 +23,16 @@ keywords:
 - tax censuses
 - opgaafrollen
 - slavery
+- emancipation
+- runaway slaves
 - genealogy
+- Great Trek
 - probate inventories
 - auctions
+- prices
+- petitions
+- directories
+- South Africa
 authors:
 - family-names: Fourie
   given-names: Johan
@@ -31,6 +40,12 @@ authors:
 - family-names: Green
   given-names: Erik
   affiliation: Stellenbosch University; Lund University
+- family-names: Bergemann
+  given-names: Karl
+  affiliation: Stellenbosch University
+- family-names: Brown
+  given-names: Gabriel
+  affiliation: Stellenbosch University
 - family-names: Burger
   given-names: Christiaan
   affiliation: Stellenbosch University
@@ -53,12 +68,24 @@ authors:
 - family-names: Liebenberg
   given-names: Helena
   affiliation: Tracing History Trust
+- family-names: Links
+  given-names: Calumet
+  affiliation: Stellenbosch University
 - family-names: Martin
   given-names: Lisa-Cheree
   affiliation: Stellenbosch University
+- family-names: Martins
+  given-names: Igor
+  affiliation: Lund University
+- family-names: McCants
+  given-names: Anne E.
+  affiliation: Massachusetts Institute of Technology
 - family-names: Pretorius
   given-names: Jan-Hendrik
   affiliation: Stellenbosch University
+- family-names: Rijpma
+  given-names: Auke
+  affiliation: Utrecht University
 - family-names: Ross
   given-names: Robert
   affiliation: Stellenbosch University; Leiden University
@@ -73,6 +100,9 @@ authors:
   name-particle: von
   given-names: Dieter
   affiliation: Stellenbosch University
+- family-names: Walters
+  given-names: Leoné
+  affiliation: University of Cape Town
 references:
 - type: article
   title: Building the Cape of Good Hope Panel
@@ -122,6 +152,22 @@ references:
   end: 446
   doi: 10.1080/02582473.2025.2500410
 - type: article
+  title: Record linkage in the Cape of Good Hope Panel
+  authors:
+  - family-names: Rijpma
+    given-names: Auke
+  - family-names: Cilliers
+    given-names: Jeanne
+  - family-names: Fourie
+    given-names: Johan
+  journal: 'Historical Methods: A Journal of Quantitative and Interdisciplinary History'
+  year: 2020
+  volume: 53
+  issue: 2
+  start: 112
+  end: 129
+  doi: 10.1080/01615440.2018.1517030
+- type: article
   title: 'The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century
     probate inventories'
   authors:
@@ -155,7 +201,7 @@ references:
   end: 49
   doi: 10.54272/sach.2025.v39n1a2
 - type: article
-  title: The South African families database
+  title: The South African Families database
   authors:
   - family-names: Cilliers
     given-names: Jeanne
@@ -165,6 +211,24 @@ references:
   start: 97
   end: 111
   doi: 10.51964/hlcs11095
+- type: article
+  title: 'Wealth and marriage at the Cape: consanguineous unions as a strategy'
+  authors:
+  - family-names: Cilliers
+    given-names: Jeanne
+  - family-names: Green
+    given-names: Erik
+  - family-names: McCants
+    given-names: Anne E.
+  - family-names: Rijpma
+    given-names: Auke
+  journal: The History of the Family
+  year: 2025
+  volume: 30
+  issue: 2
+  start: 258
+  end: 284
+  doi: 10.1080/1081602X.2025.2478381
 - type: article
   title: 'When Cape slavery ended: Introducing a new slave emancipation dataset'
   authors:
@@ -181,3 +245,124 @@ references:
   volume: 81
   start: 101390
   doi: 10.1016/j.eeh.2021.101390
+- type: article
+  title: 'Legacies of loss: The health outcomes of slaveholder compensation in the
+    British Cape Colony'
+  authors:
+  - family-names: Martins
+    given-names: Igor
+  - family-names: Cilliers
+    given-names: Jeanne
+  - family-names: Fourie
+    given-names: Johan
+  journal: Explorations in Economic History
+  year: 2023
+  volume: 89
+  start: 101506
+  doi: 10.1016/j.eeh.2022.101506
+- type: article
+  title: Creating the Cape Colony Runaway Advertisements Datasets, 1830-1842
+  authors:
+  - family-names: Bergemann
+    given-names: Karl
+  journal: Journal of Slavery and Data Preservation
+  year: 2025
+  volume: 6
+  issue: 1
+  start: 1
+  end: 14
+  doi: 10.14321/jsdp.6.1.0001
+- type: article
+  title: 'Running towards: Labour market incentives for runaway slaves in the British
+    Cape Colony, 1830-1838'
+  authors:
+  - family-names: Bergemann
+    given-names: Karl
+  - family-names: Brown
+    given-names: Gabriel
+  - family-names: Fourie
+    given-names: Johan
+  journal: Asia-Pacific Economic History Review
+  year: 2026
+  doi: 10.1111/aehr.70034
+- type: data
+  title: Cape Colony Runaway Advertisements, 1830-1842
+  authors:
+  - family-names: Bergemann
+    given-names: Karl
+  - family-names: Ekama
+    given-names: Kate
+  - family-names: Fourie
+    given-names: Johan
+  publisher:
+    name: Harvard Dataverse
+  year: 2025
+  doi: 10.7910/DVN/R1IAFM
+- type: article
+  title: 'Prices and living standards: evidence from Cape Colony auction rolls'
+  authors:
+  - family-names: Walters
+    given-names: Leoné
+  - family-names: Schoots
+    given-names: Jonathan
+  - family-names: Fourie
+    given-names: Johan
+  journal: Cliometrica
+  year: 2026
+  doi: 10.1007/s11698-026-00339-9
+- type: report
+  title: 'Protest from above: Elite decoupling and public petitioning in the VOC Cape
+    Colony'
+  authors:
+  - family-names: Schoots
+    given-names: Jonathan
+  - family-names: Fourie
+    given-names: Johan
+  institution:
+    name: Stellenbosch University
+  year: 2026
+  notes: Working paper
+- type: thesis
+  title: 'Fighting for the spoils: Cape burgerschap and faction disputes in Cape Town
+    in the 1770s'
+  authors:
+  - family-names: Baartman
+    given-names: Teunis
+  institution:
+    name: University of Cape Town
+  year: 2011
+  notes: PhD thesis
+- type: article
+  title: Selection into the Great Trek
+  authors:
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Links
+    given-names: Calumet
+  journal: European Review of Economic History
+  year: 2026
+  notes: Forthcoming
+- type: book
+  title: Voortrekkerstamouers 1835-1845
+  authors:
+  - family-names: Visagie
+    given-names: Jan C.
+  publisher:
+    name: Protea Boekhuis
+  year: 2011
+  notes: '2nd edition, Pretoria (1st edition: Universiteit van Suid-Afrika, 2000)'
+- type: article
+  title: 'Accommodation and resistance: The housing of Cape Town''s enslaved and freed
+    population before and after emancipation'
+  authors:
+  - family-names: Ross
+    given-names: Robert
+  - family-names: Martin
+    given-names: Lisa-Cheree
+  journal: Journal of Southern African Studies
+  year: 2021
+  volume: 47
+  issue: 3
+  start: 417
+  end: 435
+  doi: 10.1080/03057070.2021.1904751

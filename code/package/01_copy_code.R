@@ -9,8 +9,9 @@ old <- setdiff(list.files(dest, full.names = TRUE, all.files = TRUE, no.. = TRUE
                file.path(dest, "README.md"))
 unlink(old, recursive = TRUE)
 
-for (part in c("opgaaf", "emancipation", "saf", "xml", "package")) {
-  files <- list.files(here("pipeline", part), pattern = "[.](R|md)$")
+for (part in c("opgaaf", "emancipation", "saf", "runaways", "prices", "petition1779",
+               "voortrekkers", "almanacs", "xml", "package")) {
+  files <- list.files(here("pipeline", part), pattern = "[.](R|md|ps1)$")
   dir.create(file.path(dest, part), showWarnings = FALSE)
   stopifnot(all(file.copy(here("pipeline", part, files), file.path(dest, part, files), overwrite = TRUE)))
 }

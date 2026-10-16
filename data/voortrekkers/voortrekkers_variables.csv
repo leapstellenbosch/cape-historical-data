@@ -1,0 +1,32 @@
+table,variable,type,source_column,description
+voortrekkers_persons,chdr_id,character,,"Repository identifier, never changed: VTR- and the row in the source sheet less one (VTR-0001 is row 2)"
+voortrekkers_persons,genealogical_number,character,number (ORIGINAL),"Number in Visagie's register (b1c2d3...: a letter per generation and the birth order), as transcribed with any query marks; the progenitor's a1 is implied where absent"
+voortrekkers_persons,surname,character,SURNAME (oorspronklik),Surname as in the register
+voortrekkers_persons,first_names,character,NAME,"First names as in the register, with nicknames in brackets and Sr./Jr."
+voortrekkers_persons,birth_place,character,BIRTH PLACE,Place of birth
+voortrekkers_persons,birth_date,character,dob,"Date of birth: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_persons,baptism_place,character,BAPTISED PLACE,Place of baptism
+voortrekkers_persons,baptism_date,character,BAPTISE date,"Date of baptism: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_persons,death_place,character,PLACE (†),Place of death
+voortrekkers_persons,death_date,character,dod,"Date of death: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839); dates Excel had stored as day numbers are converted"
+voortrekkers_persons,ward,character,WYK,Ward (wyk) of residence before the Trek
+voortrekkers_persons,district,character,DISTRIK,District of residence before the Trek
+voortrekkers_persons,trek_date,character,MOVE ON,"When the person left: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_persons,trek_party,character,MOVE WITH,"Leader or party the person trekked with, as written (spellings vary)"
+voortrekkers_persons,trek_destination,character,MOVE TO,"Destination, as written (Natal, Transoranje, OVS, ...)"
+voortrekkers_persons,notes,character,NOTES,"Notes from the register, mostly in Afrikaans (battles, family ties)"
+voortrekkers_persons,leaders,character,LEADERS,Marks trek leaders
+voortrekkers_marriages,chdr_id,character,,"Repository identifier, never changed: the person's chdr_id and -M{marriage_order}"
+voortrekkers_marriages,principal_chdr_id,character,,chdr_id of the trekker in voortrekkers_persons
+voortrekkers_marriages,marriage_order,integer,,"First to fifth marriage, from the block of columns in the sheet"
+voortrekkers_marriages,marriage_place,character,"M. PLACE, S.M. PLACE, T.M. PLACE, F.M. PLACE",Place of marriage
+voortrekkers_marriages,marriage_date,character,"M. DATE, S.M. DATE, T.M. DATE, F.M. DATE","Date of marriage: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_marriages,spouse_first_names,character,M. TO and its repeats,Spouse's first names
+voortrekkers_marriages,spouse_surname,character,SURNAME,Spouse's surname
+voortrekkers_marriages,spouse_genealogical_number,character,NUMBER,"Spouse's number in the register, where the spouse is also a descendant"
+voortrekkers_marriages,spouse_birth_place,character,BIRTH PLACE,Spouse's place of birth
+voortrekkers_marriages,spouse_birth_date,character,BORN (*),"Spouse's date of birth: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_marriages,spouse_baptism_place,character,BAPTISE PLACE,Spouse's place of baptism
+voortrekkers_marriages,spouse_baptism_date,character,BAPTISED (≈),"Spouse's date of baptism: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839)"
+voortrekkers_marriages,spouse_death_place,character,PLACE (†),Spouse's place of death
+voortrekkers_marriages,spouse_death_date,character,DIED (†),"Spouse's date of death: ISO 8601 (YYYY, YYYY-MM, YYYY-MM-DD, or an interval a/b) where the source can be read unambiguously, otherwise as transcribed (e.g. CA 1813, BEFORE 1839); Excel day numbers converted"

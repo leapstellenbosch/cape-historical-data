@@ -18,6 +18,13 @@ Dutch, as written.
 1701–1825", *South African Journal of Cultural History* 39(1): 27–49,
 doi:[10.54272/sach.2025.v39n1a2](https://doi.org/10.54272/sach.2025.v39n1a2).
 
+**Archival source:** the Western Cape Archives and Records Service (WCARS), Cape Town, records of the Master of the Orphan
+Chamber (MOOC, WCARS inventory 1/3): **MOOC 10/1–10/47**, vendue rolls
+(*vendurollen*), 1691–1834, and an index to the vendue rolls. The loose rolls
+in MOOC 10/48 are not included. The file for each volume is named after it
+(`MOOC10_vol25.xml` is MOOC 10/25). The rolls were transcribed on site from
+the original documents and converted to XML by the Tracing History Trust.
+
 ## Files
 
 | File | Contents |

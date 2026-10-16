@@ -1,0 +1,13 @@
+table,variable,type,source_column,description
+prices_goods,good,character,goods_included_class: items,Name of the good; the key to good in the other two tables
+prices_goods,asset,character,goods_included_class: asset,productive or household
+prices_goods,class,character,goods_included_class: classification,"Class used in the paper: equipment, labour, livestock (productive); luxury, major, minor (household)"
+prices_goods,dutch_terms,character,goods_included_class: dutch words (included),Dutch words searched for in the auction rolls to identify the good
+prices_annual,year,integer,"median_prices, avg_prices: year",Year of the auctions
+prices_annual,good,character,column names,"Good, as in prices_goods"
+prices_annual,median_price,number,median_prices,Median unit price in rixdollars of lots of the good sold that year
+prices_annual,mean_price,number,avg_prices,Mean unit price in rixdollars of lots of the good sold that year
+prices_auction_goods,mooc_id,character,count: mooc_id,Archival reference of the auction (MOOC10/volume.item); the document's n attribute in the auctions XML
+prices_auction_goods,year,integer,count: year,"Year of the auction, as used in the paper"
+prices_auction_goods,good,character,count: column names,"Good, as in prices_goods"
+prices_auction_goods,quantity,integer,count,"Number of units of the good sold at the auction; goods not sold there are omitted, so a missing row means zero"
