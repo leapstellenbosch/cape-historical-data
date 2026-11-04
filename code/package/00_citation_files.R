@@ -33,6 +33,7 @@ cff_work <- function(w) {
   if (!is.null(w$journal)) r$journal <- w$journal
   if (!is.null(w$publisher)) r$publisher <- list(name = w$publisher)
   if (!is.null(w$institution)) r$institution <- list(name = w$institution)
+  if (!is.null(w$conference)) r$conference <- list(name = w$conference)
   r$year <- as.integer(w$year)
   for (f in c("volume", "issue", "start", "end")) if (!is.null(w[[f]])) r[[f]] <- as.integer(w[[f]])
   if (!is.null(w$note)) r$notes <- w$note

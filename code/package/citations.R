@@ -7,8 +7,9 @@ release_version <- "1.2"
 release_date <- "2026-11-04"   # set to the day the GitHub release is published
 
 # Version 1.2 withholds the SAF genealogies (Johan, 4 Nov 2026; see the
-# decision ledger). Their works, archival source and creator (McCants, an
-# author of the SAF paper only) are left out until the collection returns.
+# decision ledger). Their works and archival source are left out until the
+# collection returns. McCants stays a creator through the probate paper
+# (McCants, Fourie and Walters 2026), added the same day.
 
 # Creators: the authors of the collection papers (Johan, 13 Oct 2026): Fourie
 # and Green first, then alphabetical by full surname, particles included.
@@ -29,6 +30,7 @@ creators <- tribble(
   "Links",       NA,         "Calumet",      "Stellenbosch University",
   "Martin",      NA,         "Lisa-Cheree",  "Stellenbosch University",
   "Martins",     NA,         "Igor",         "Lund University",
+  "McCants",     NA,         "Anne E.",      "Massachusetts Institute of Technology",
   "Pretorius",   NA,         "Jan-Hendrik",  "Stellenbosch University",
   "Rijpma",      NA,         "Auke",         "Utrecht University",
   "Ross",        NA,         "Robert",       "Stellenbosch University; Leiden University",
@@ -59,6 +61,10 @@ works <- list(
        title = "The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories",
        journal = "The Economic History Review", year = 2013, volume = 66, issue = 2, start = 419, end = 448,
        doi = "10.1111/j.1468-0289.2012.00662.x"),
+  list(key = "McCantsEtAl2026", coll = "probate", role = "paper", type = "conference-paper",
+       authors = a("McCants, Anne E.", "Fourie, Johan", "Walters, Leoné"), title = "Selection in probate inventories",
+       conference = "African Economic History Network annual meeting, Gothenburg",
+       note = "Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026", year = 2026),
   list(key = "FourieEtAl2025", coll = "auctions", role = "paper", type = "article",
        authors = a("Fourie, Johan", "Liebenberg, Helena", "Schoots, Jonathan", "van der Linde, Paul"),
        title = "Auction records, consumer culture and social networks in the Cape Colony, 1701-1825",

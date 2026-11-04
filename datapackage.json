@@ -86,6 +86,11 @@
       "organization": "Lund University"
     },
     {
+      "title": "Anne E. McCants",
+      "role": "author",
+      "organization": "Massachusetts Institute of Technology"
+    },
+    {
       "title": "Jan-Hendrik Pretorius",
       "role": "author",
       "organization": "Stellenbosch University"
@@ -121,7 +126,7 @@
       "organization": "University of Cape Town"
     }
   ],
-  "created": "2026-11-04T02:40:34Z",
+  "created": "2026-11-04T03:19:32Z",
   "resources": [
     {
       "name": "opgaaf-tax-units",
@@ -3413,7 +3418,7 @@
       "name": "probate-file-names",
       "path": "data/probate/file_names.txt",
       "title": "Probate inventories (MOOC8) file list",
-      "description": "Each XML file: published name, original name, number of documents, size and MD5 checksum. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "Each XML file: published name, original name, number of documents, size and MD5 checksum. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "csv",
       "mediatype": "text/tab-separated-values",
       "encoding": "utf-8",
@@ -3461,6 +3466,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3469,7 +3477,7 @@
       "name": "probate-corrections",
       "path": "data/probate/corrections.txt",
       "title": "Probate corrections",
-      "description": "Every change made to the transcribers' probate files: a duplicated copy of volume 10 removed from volume 1, and thirteen archival references corrected. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "Every change made to the transcribers' probate files: a duplicated copy of volume 10 removed from volume 1, and thirteen archival references corrected. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "csv",
       "mediatype": "text/tab-separated-values",
       "encoding": "utf-8",
@@ -3521,6 +3529,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3529,7 +3540,7 @@
       "name": "mooc8-vol01",
       "path": "data/probate/xml/MOOC8_vol01.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol01",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 87 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 87 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3541,6 +3552,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3549,7 +3563,7 @@
       "name": "mooc8-vol02",
       "path": "data/probate/xml/MOOC8_vol02.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol02",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 125 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 125 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3561,6 +3575,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3569,7 +3586,7 @@
       "name": "mooc8-vol03",
       "path": "data/probate/xml/MOOC8_vol03.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol03",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 111 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 111 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3581,6 +3598,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3589,7 +3609,7 @@
       "name": "mooc8-vol04",
       "path": "data/probate/xml/MOOC8_vol04.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol04",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 139 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 139 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3601,6 +3621,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3609,7 +3632,7 @@
       "name": "mooc8-vol05",
       "path": "data/probate/xml/MOOC8_vol05.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol05",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 181 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 181 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3621,6 +3644,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3629,7 +3655,7 @@
       "name": "mooc8-vol06",
       "path": "data/probate/xml/MOOC8_vol06.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol06",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 192 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 192 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3641,6 +3667,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3649,7 +3678,7 @@
       "name": "mooc8-vol07",
       "path": "data/probate/xml/MOOC8_vol07.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol07",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 121 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 121 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3661,6 +3690,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3669,7 +3701,7 @@
       "name": "mooc8-vol08",
       "path": "data/probate/xml/MOOC8_vol08.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol08",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 63 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 63 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3681,6 +3713,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3689,7 +3724,7 @@
       "name": "mooc8-vol09",
       "path": "data/probate/xml/MOOC8_vol09.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol09",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 62 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 62 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3701,6 +3736,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3709,7 +3747,7 @@
       "name": "mooc8-vol10",
       "path": "data/probate/xml/MOOC8_vol10.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol10",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 114 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 114 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3721,6 +3759,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3729,7 +3770,7 @@
       "name": "mooc8-vol11",
       "path": "data/probate/xml/MOOC8_vol11.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol11",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 66 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 66 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3741,6 +3782,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3749,7 +3793,7 @@
       "name": "mooc8-vol12",
       "path": "data/probate/xml/MOOC8_vol12.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol12",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 89 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 89 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3761,6 +3805,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3769,7 +3816,7 @@
       "name": "mooc8-vol13",
       "path": "data/probate/xml/MOOC8_vol13.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol13",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 90 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 90 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3781,6 +3828,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3789,7 +3839,7 @@
       "name": "mooc8-vol14",
       "path": "data/probate/xml/MOOC8_vol14.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol14",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 89 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 89 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3801,6 +3851,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3809,7 +3862,7 @@
       "name": "mooc8-vol15",
       "path": "data/probate/xml/MOOC8_vol15.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol15",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 76 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 76 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3821,6 +3874,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3829,7 +3885,7 @@
       "name": "mooc8-vol16",
       "path": "data/probate/xml/MOOC8_vol16.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol16",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 84 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 84 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3841,6 +3897,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3849,7 +3908,7 @@
       "name": "mooc8-vol17",
       "path": "data/probate/xml/MOOC8_vol17.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol17",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 111 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 111 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3861,6 +3920,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3869,7 +3931,7 @@
       "name": "mooc8-vol18",
       "path": "data/probate/xml/MOOC8_vol18.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol18",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 110 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 110 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3881,6 +3943,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3889,7 +3954,7 @@
       "name": "mooc8-vol19",
       "path": "data/probate/xml/MOOC8_vol19.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol19",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 84 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 84 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3901,6 +3966,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3909,7 +3977,7 @@
       "name": "mooc8-vol20",
       "path": "data/probate/xml/MOOC8_vol20.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol20",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 54 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 54 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3921,6 +3989,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3929,7 +4000,7 @@
       "name": "mooc8-vol21",
       "path": "data/probate/xml/MOOC8_vol21.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol21",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 64 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 64 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3941,6 +4012,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3949,7 +4023,7 @@
       "name": "mooc8-vol22",
       "path": "data/probate/xml/MOOC8_vol22.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol22",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 74 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 74 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3961,6 +4035,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3969,7 +4046,7 @@
       "name": "mooc8-vol23",
       "path": "data/probate/xml/MOOC8_vol23.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol23",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 56 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 56 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -3981,6 +4058,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -3989,7 +4069,7 @@
       "name": "mooc8-vol24",
       "path": "data/probate/xml/MOOC8_vol24.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol24",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4001,6 +4081,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4009,7 +4092,7 @@
       "name": "mooc8-vol25",
       "path": "data/probate/xml/MOOC8_vol25.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol25",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 49 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 49 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4021,6 +4104,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4029,7 +4115,7 @@
       "name": "mooc8-vol26",
       "path": "data/probate/xml/MOOC8_vol26.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol26",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 73 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 73 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4041,6 +4127,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4049,7 +4138,7 @@
       "name": "mooc8-vol27",
       "path": "data/probate/xml/MOOC8_vol27.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol27",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 47 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 47 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4061,6 +4150,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4069,7 +4161,7 @@
       "name": "mooc8-vol28",
       "path": "data/probate/xml/MOOC8_vol28.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol28",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 73 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 73 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4081,6 +4173,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4089,7 +4184,7 @@
       "name": "mooc8-vol29",
       "path": "data/probate/xml/MOOC8_vol29.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol29",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 44 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 44 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4101,6 +4196,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4109,7 +4207,7 @@
       "name": "mooc8-vol30",
       "path": "data/probate/xml/MOOC8_vol30.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol30",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4121,6 +4219,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4129,7 +4230,7 @@
       "name": "mooc8-vol31",
       "path": "data/probate/xml/MOOC8_vol31.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol31",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 77 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 77 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4141,6 +4242,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4149,7 +4253,7 @@
       "name": "mooc8-vol32",
       "path": "data/probate/xml/MOOC8_vol32.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol32",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 59 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 59 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4161,6 +4265,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4169,7 +4276,7 @@
       "name": "mooc8-vol33",
       "path": "data/probate/xml/MOOC8_vol33.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol33",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 63 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 63 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4181,6 +4288,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4189,7 +4299,7 @@
       "name": "mooc8-vol34",
       "path": "data/probate/xml/MOOC8_vol34.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol34",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 52 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 52 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4201,6 +4311,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4209,7 +4322,7 @@
       "name": "mooc8-vol35",
       "path": "data/probate/xml/MOOC8_vol35.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol35",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 37 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 37 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4221,6 +4334,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4229,7 +4345,7 @@
       "name": "mooc8-vol36",
       "path": "data/probate/xml/MOOC8_vol36.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol36",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 75 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 75 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4241,6 +4357,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4249,7 +4368,7 @@
       "name": "mooc8-vol37",
       "path": "data/probate/xml/MOOC8_vol37.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol37",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4261,6 +4380,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4269,7 +4391,7 @@
       "name": "mooc8-vol38",
       "path": "data/probate/xml/MOOC8_vol38.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol38",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 67 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 67 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4281,6 +4403,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4289,7 +4414,7 @@
       "name": "mooc8-vol39",
       "path": "data/probate/xml/MOOC8_vol39.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol39",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 54 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 54 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4301,6 +4426,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4309,7 +4437,7 @@
       "name": "mooc8-vol40",
       "path": "data/probate/xml/MOOC8_vol40.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol40",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 69 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 69 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4321,6 +4449,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4329,7 +4460,7 @@
       "name": "mooc8-vol41",
       "path": "data/probate/xml/MOOC8_vol41.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol41",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 2 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 2 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4341,6 +4472,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4349,7 +4483,7 @@
       "name": "mooc8-vol42",
       "path": "data/probate/xml/MOOC8_vol42.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol42",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4361,6 +4495,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4369,7 +4506,7 @@
       "name": "mooc8-vol43",
       "path": "data/probate/xml/MOOC8_vol43.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol43",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4381,6 +4518,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4389,7 +4529,7 @@
       "name": "mooc8-vol44",
       "path": "data/probate/xml/MOOC8_vol44.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol44",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 82 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 82 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4401,6 +4541,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4409,7 +4552,7 @@
       "name": "mooc8-vol45",
       "path": "data/probate/xml/MOOC8_vol45.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol45",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 144 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 144 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4421,6 +4564,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4429,7 +4575,7 @@
       "name": "mooc8-vol46",
       "path": "data/probate/xml/MOOC8_vol46.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol46",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 108 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 108 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4441,6 +4587,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4449,7 +4598,7 @@
       "name": "mooc8-vol47",
       "path": "data/probate/xml/MOOC8_vol47.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol47",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4461,6 +4610,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4469,7 +4621,7 @@
       "name": "mooc8-vol48",
       "path": "data/probate/xml/MOOC8_vol48.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol48",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 43 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 43 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4481,6 +4633,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4489,7 +4644,7 @@
       "name": "mooc8-vol49",
       "path": "data/probate/xml/MOOC8_vol49.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol49",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 125 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 125 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4501,6 +4656,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4509,7 +4667,7 @@
       "name": "mooc8-vol50",
       "path": "data/probate/xml/MOOC8_vol50.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol50",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 201 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 201 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4521,6 +4679,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4529,7 +4690,7 @@
       "name": "mooc8-vol51",
       "path": "data/probate/xml/MOOC8_vol51.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol51",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 93 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 93 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4541,6 +4702,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4549,7 +4713,7 @@
       "name": "mooc8-vol52",
       "path": "data/probate/xml/MOOC8_vol52.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol52",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 106 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 106 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4561,6 +4725,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4569,7 +4736,7 @@
       "name": "mooc8-vol53",
       "path": "data/probate/xml/MOOC8_vol53.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol53",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 133 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 133 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4581,6 +4748,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4589,7 +4759,7 @@
       "name": "mooc8-vol54",
       "path": "data/probate/xml/MOOC8_vol54.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol54",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 67 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 67 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4601,6 +4771,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4609,7 +4782,7 @@
       "name": "mooc8-vol55",
       "path": "data/probate/xml/MOOC8_vol55.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol55",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 96 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 96 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4621,6 +4794,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4629,7 +4805,7 @@
       "name": "mooc8-vol56",
       "path": "data/probate/xml/MOOC8_vol56.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol56",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 116 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 116 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4641,6 +4817,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4649,7 +4828,7 @@
       "name": "mooc8-vol57",
       "path": "data/probate/xml/MOOC8_vol57.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol57",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 104 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 104 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4661,6 +4840,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4669,7 +4851,7 @@
       "name": "mooc8-vol58",
       "path": "data/probate/xml/MOOC8_vol58.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol58",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 100 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 100 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4681,6 +4863,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4689,7 +4874,7 @@
       "name": "mooc8-vol59",
       "path": "data/probate/xml/MOOC8_vol59.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol59",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 106 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 106 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4701,6 +4886,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4709,7 +4897,7 @@
       "name": "mooc8-vol60",
       "path": "data/probate/xml/MOOC8_vol60.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol60",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 53 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4721,6 +4909,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4729,7 +4920,7 @@
       "name": "mooc8-vol61",
       "path": "data/probate/xml/MOOC8_vol61.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol61",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 64 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 64 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4741,6 +4932,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4749,7 +4943,7 @@
       "name": "mooc8-vol62",
       "path": "data/probate/xml/MOOC8_vol62.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol62",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 45 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 45 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4761,6 +4955,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4769,7 +4966,7 @@
       "name": "mooc8-vol63",
       "path": "data/probate/xml/MOOC8_vol63.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol63",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 55 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4781,6 +4978,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4789,7 +4989,7 @@
       "name": "mooc8-vol64",
       "path": "data/probate/xml/MOOC8_vol64.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol64",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 43 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 43 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4801,6 +5001,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4809,7 +5012,7 @@
       "name": "mooc8-vol65",
       "path": "data/probate/xml/MOOC8_vol65.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol65",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 33 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 33 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4821,6 +5024,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4829,7 +5035,7 @@
       "name": "mooc8-vol66",
       "path": "data/probate/xml/MOOC8_vol66.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol66",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 52 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 52 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4841,6 +5047,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4849,7 +5058,7 @@
       "name": "mooc8-vol67",
       "path": "data/probate/xml/MOOC8_vol67.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol67",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 71 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 71 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4861,6 +5070,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4869,7 +5081,7 @@
       "name": "mooc8-vol68",
       "path": "data/probate/xml/MOOC8_vol68.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol68",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 65 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 65 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4881,6 +5093,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4889,7 +5104,7 @@
       "name": "mooc8-vol69",
       "path": "data/probate/xml/MOOC8_vol69.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol69",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 79 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 79 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4901,6 +5116,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4909,7 +5127,7 @@
       "name": "mooc8-vol70",
       "path": "data/probate/xml/MOOC8_vol70.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol70",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 102 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 102 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4921,6 +5139,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4929,7 +5150,7 @@
       "name": "mooc8-vol71",
       "path": "data/probate/xml/MOOC8_vol71.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol71",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 42 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 42 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4941,6 +5162,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4949,7 +5173,7 @@
       "name": "mooc8-vol72",
       "path": "data/probate/xml/MOOC8_vol72.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol72",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 29 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 29 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4961,6 +5185,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4969,7 +5196,7 @@
       "name": "mooc8-vol73",
       "path": "data/probate/xml/MOOC8_vol73.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol73",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 46 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 46 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -4981,6 +5208,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -4989,7 +5219,7 @@
       "name": "mooc8-vol74",
       "path": "data/probate/xml/MOOC8_vol74.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol74",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 41 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 41 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -5001,6 +5231,9 @@
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
         },
         {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
+        },
+        {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"
         }
       ]
@@ -5009,7 +5242,7 @@
       "name": "mooc8-vol75",
       "path": "data/probate/xml/MOOC8_vol75.xml",
       "title": "Probate inventories (MOOC8) MOOC8_vol75",
-      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448.",
+      "description": "TEI-style transcription XML of the MOOC8 probate inventories of the Orphan Chamber, 1673-1844: 70 documents. See data/probate/README.md. Cite: Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448; and McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026.",
       "format": "xml",
       "mediatype": "application/xml",
       "encoding": "utf-8",
@@ -5019,6 +5252,9 @@
         {
           "title": "Fourie, J. (2013). The remarkable wealth of the Dutch Cape Colony: measurements from eighteenth-century probate inventories. The Economic History Review 66(2): 419-448",
           "path": "https://doi.org/10.1111/j.1468-0289.2012.00662.x"
+        },
+        {
+          "title": "McCants, A. E., Fourie, J. and Walters, L. (2026). Selection in probate inventories. Paper presented at the African Economic History Network annual meeting, Gothenburg, October 2026"
         },
         {
           "title": "Archival source: WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"

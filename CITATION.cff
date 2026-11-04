@@ -83,6 +83,9 @@ authors:
 - family-names: Martins
   given-names: Igor
   affiliation: Lund University
+- family-names: McCants
+  given-names: Anne E.
+  affiliation: Massachusetts Institute of Technology
 - family-names: Pretorius
   given-names: Jan-Hendrik
   affiliation: Stellenbosch University
@@ -183,6 +186,20 @@ references:
   start: 419
   end: 448
   doi: 10.1111/j.1468-0289.2012.00662.x
+- type: conference-paper
+  title: Selection in probate inventories
+  authors:
+  - family-names: McCants
+    given-names: Anne E.
+  - family-names: Fourie
+    given-names: Johan
+  - family-names: Walters
+    given-names: Leoné
+  conference:
+    name: African Economic History Network annual meeting, Gothenburg
+  year: 2026
+  notes: Paper presented at the African Economic History Network annual meeting, Gothenburg,
+    October 2026
 - type: article
   title: Auction records, consumer culture and social networks in the Cape Colony,
     1701-1825

@@ -16,7 +16,10 @@ clerks.
 **Cite:** Fourie, J. (2013), "The remarkable wealth of the Dutch Cape Colony:
 Measurements from eighteenth-century probate inventories", *Economic History
 Review* 66(2): 419–448,
-doi:[10.1111/j.1468-0289.2012.00662.x](https://doi.org/10.1111/j.1468-0289.2012.00662.x).
+doi:[10.1111/j.1468-0289.2012.00662.x](https://doi.org/10.1111/j.1468-0289.2012.00662.x);
+**and** McCants, A. E., Fourie, J. and Walters, L. (2026), "Selection in
+probate inventories", paper presented at the African Economic History Network
+annual meeting, Gothenburg, October 2026.
 
 **Archival source:** the Western Cape Archives and Records Service (WCARS), Cape Town, records of the Master of the Orphan
 Chamber (MOOC, WCARS inventory 1/3): **MOOC 8/1–8/48**, inventories, general
