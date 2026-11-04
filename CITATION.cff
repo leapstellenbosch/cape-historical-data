@@ -3,9 +3,9 @@ message: If you use these data, cite the paper(s) for each collection you use (s
   README and references below) and this release.
 type: dataset
 title: Cape Historical Data Repository
-version: '1.1'
+version: '1.2'
 doi: 10.5281/zenodo.23397436
-date-released: '2026-10-16'
+date-released: '2026-11-04'
 identifiers:
 - type: doi
   value: 10.5281/zenodo.23397436
@@ -80,9 +80,6 @@ authors:
 - family-names: Martins
   given-names: Igor
   affiliation: Lund University
-- family-names: McCants
-  given-names: Anne E.
-  affiliation: Massachusetts Institute of Technology
 - family-names: Pretorius
   given-names: Jan-Hendrik
   affiliation: Stellenbosch University
@@ -203,35 +200,6 @@ references:
   start: 27
   end: 49
   doi: 10.54272/sach.2025.v39n1a2
-- type: article
-  title: The South African Families database
-  authors:
-  - family-names: Cilliers
-    given-names: Jeanne
-  journal: Historical Life Course Studies
-  year: 2021
-  volume: 11
-  start: 97
-  end: 111
-  doi: 10.51964/hlcs11095
-- type: article
-  title: 'Wealth and marriage at the Cape: consanguineous unions as a strategy'
-  authors:
-  - family-names: Cilliers
-    given-names: Jeanne
-  - family-names: Green
-    given-names: Erik
-  - family-names: McCants
-    given-names: Anne E.
-  - family-names: Rijpma
-    given-names: Auke
-  journal: The History of the Family
-  year: 2025
-  volume: 30
-  issue: 2
-  start: 258
-  end: 284
-  doi: 10.1080/1081602X.2025.2478381
 - type: article
   title: 'When Cape slavery ended: Introducing a new slave emancipation dataset'
   authors:

@@ -36,16 +36,6 @@ claims = (ema.dropna(subset=["claim_compensation", "lbs_claim_number"])
 claims["n_amounts"] = claims.groupby("lbs_claim_number")["claim_compensation"].transform("size")
 print((claims.n_amounts > 1).groupby(claims.lbs_claim_number).any().sum(), "claims with more than one amount")
 
-# ---- SAF genealogies ----
-persons = pd.read_parquet("data/saf/saf_persons.parquet")
-marriages = pd.read_parquet("data/saf/saf_marriages.parquet")
-# Each person's parents' marriage. A few codes are shared by two people
-# (see id_flag), so a code can match more than one marriage.
-with_parents = persons.merge(
-    marriages[["spouse_code", "marriage_year"]].rename(columns={"marriage_year": "parents_marriage_year"}),
-    left_on="mother_spouse_code", right_on="spouse_code", how="left")
-
-
 # ---- Probate inventories and auction rolls (XML) ----
 def read_documents(path):
     """One row per document: reference, date and deceased."""

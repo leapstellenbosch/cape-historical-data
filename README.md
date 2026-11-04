@@ -10,7 +10,6 @@ Economics of Africa's Past), Stellenbosch University. Data under CC BY 4.0
 |---|---|---|---|
 | **Opgaaf** (tax censuses) | 1660–1844, ten districts | A tax declaration (325,628), or a line of a multi-line declaration (15,501) | CSV, Parquet |
 | **Slave emancipation** | 1834 | A record of an enslaved person in the emancipation registers (36,417) | CSV, Parquet |
-| **SAF genealogies** | People born up to 1870 | A person (213,953), or a marriage with the spouse's details (153,568), in the South African Families database | CSV, Parquet |
 | **Runaway advertisements** | 1830–1842 | A person named in a runaway advertisement in *De Zuid Afrikaan* or the *Government Gazette* (881) | CSV, Parquet |
 | **1779 petition** | 1779 | A signatory of the Cape Patriots petition (404) | CSV, Parquet |
 | **Voortrekkers** | 1835–1845 | A trekker in Visagie's register (2,313), or a marriage (2,978) | CSV, Parquet |
@@ -22,6 +21,12 @@ Economics of Africa's Past), Stellenbosch University. Data under CC BY 4.0
 Records, not people: rows are not linked across collections or across years. A
 tax declaration, an auction buyer and a genealogical entry stay separate even
 when they probably describe the same person.
+
+The SAF genealogies (South African Families database, people born up to 1870)
+that versions 1.0 and 1.1 included are withheld from this version. Their
+record identifiers (`SAF-000007`) are reserved and will be carried over if the
+collection returns. The earlier versions remain available on Zenodo under
+their own DOIs.
 
 Each collection's folder in `data/` has a `README.md` that explains what the
 records are, how they were cleaned and what to watch for, and a variable or
@@ -39,7 +44,6 @@ alongside the papers listed below.
 |---|---|---|
 | Opgaaf | Annual tax returns (*opgaafrollen*) | WCARS, series J (inventory 1/5), J 1–J 438; early returns in the Nationaal Archief, The Hague, VOC archive 1.04.02, inv. nos 3994–4276. Each district-year: `data/opgaaf/opgaaf_archival_references.csv` |
 | Slave emancipation | Valuation lists and slave registers, 1816–1834 | WCARS, Slave Office (inventory 1/21): SO 20 (Slave Compensation Office; e.g. SO 20/10, Graaff-Reinet) and SO 6 (registers of slaves); compensation awards from The National Archives (UK), T 71, via Legacies of British Slavery |
-| SAF genealogies | Genealogical registers | Genealogical Institute of South Africa, *Suid-Afrikaanse Geslagsregisters*, compiled from Dutch Reformed Church registers, court marriage records (card index at WCARS) and death notices (WCARS, MOOC 6/9) |
 | Runaway advertisements | Newspapers | *De Zuid Afrikaan* and the *Cape of Good Hope Government Gazette*, 1830–1842, from Stellenbosch University Library, the National Library of South Africa (Cape Town) and HathiTrust |
 | 1779 petition | The Cape Patriots' petition | WCARS, Council of Policy (inventory 1/1), C 2665, pp. 2–9 |
 | Voortrekkers | Visagie's register of the Trek's family heads | Compiled from the Cape officials' emigration lists and other archival sources; the book gives the sources of each entry |
@@ -93,7 +97,7 @@ Things to know when reading the CSV files:
 
 Every row of a record table has a permanent `chdr_id` that will not change in
 later versions: `OPG-STB-1750-00123` (opgaaf: district, year, spreadsheet row),
-`EMA-00001` (emancipation), `SAF-000007` (SAF), `RUN-ZA-001` (runaways:
+`EMA-00001` (emancipation), `RUN-ZA-001` (runaways:
 newspaper and reference number), `PET-001` (petition),
 `VTR-0001` (Voortrekkers), `ALM-CAL-1838-00001` (almanacs: publication,
 edition, entry). Probate and auction documents are identified by their
@@ -111,7 +115,6 @@ Cite the paper(s) for each collection you use, and this release.
 |---|---|
 | Opgaaf | Fourie, J. and Green, E. (2018). Building the Cape of Good Hope Panel. *The History of the Family*, 23(3), 493–502. doi:[10.1080/1081602X.2018.1509367](https://doi.org/10.1080/1081602X.2018.1509367). **And** Fourie, J., Green, E., Burger, C., de Wit, C., Ekama, K., Greyling, J., Heese, H., Pretorius, J.-H., Ross, R. and von Fintel, D. (2024). ‘Waar is beter dorp in Zuid Africa dan Stellenbos?’: What the Stellenbosch-Drakenstein Tax Censuses Reveal. *South African Historical Journal*, 76(4), 420–446. doi:[10.1080/02582473.2025.2500410](https://doi.org/10.1080/02582473.2025.2500410). **And** Rijpma, A., Cilliers, J. and Fourie, J. (2020). Record linkage in the Cape of Good Hope Panel. *Historical Methods*, 53(2), 112–129. doi:[10.1080/01615440.2018.1517030](https://doi.org/10.1080/01615440.2018.1517030). |
 | Slave emancipation | Ekama, K., Fourie, J., Heese, H. and Martin, L.-C. (2021). When Cape slavery ended: Introducing a new slave emancipation dataset. *Explorations in Economic History*, 81, 101390. doi:[10.1016/j.eeh.2021.101390](https://doi.org/10.1016/j.eeh.2021.101390). **And** Martins, I., Cilliers, J. and Fourie, J. (2023). Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony. *Explorations in Economic History*, 89, 101506. doi:[10.1016/j.eeh.2022.101506](https://doi.org/10.1016/j.eeh.2022.101506). |
-| SAF genealogies | Cilliers, J. (2021). The South African Families database. *Historical Life Course Studies*, 11, 97–111. doi:[10.51964/hlcs11095](https://doi.org/10.51964/hlcs11095). **And** Cilliers, J., Green, E., McCants, A. E. and Rijpma, A. (2025). Wealth and marriage at the Cape: consanguineous unions as a strategy. *The History of the Family*, 30(2), 258–284. doi:[10.1080/1081602X.2025.2478381](https://doi.org/10.1080/1081602X.2025.2478381). |
 | Runaway advertisements | Bergemann, K. (2025). Creating the Cape Colony Runaway Advertisements Datasets, 1830–1842. *Journal of Slavery and Data Preservation*, 6(1), 1–14. doi:[10.14321/jsdp.6.1.0001](https://doi.org/10.14321/jsdp.6.1.0001). **And** Bergemann, K., Brown, G. and Fourie, J. (2026). Running towards: Labour market incentives for runaway slaves in the British Cape Colony, 1830–1838. *Asia-Pacific Economic History Review*. doi:[10.1111/aehr.70034](https://doi.org/10.1111/aehr.70034). Original deposit: Bergemann, K., Ekama, K. and Fourie, J. (2025), Harvard Dataverse, doi:[10.7910/DVN/R1IAFM](https://doi.org/10.7910/DVN/R1IAFM). |
 | 1779 petition | Schoots, J. and Fourie, J. (2026). Protest from above: Elite decoupling and public petitioning in the VOC Cape Colony. Working paper, Stellenbosch University. Source: WCARS C 2665, transcribed in Baartman, T. (2011), PhD thesis, University of Cape Town. |
 | Voortrekkers | Fourie, J. and Links, C. (forthcoming). Selection into the Great Trek. *European Review of Economic History*. **And** the register: Visagie, J. C. (2011). *Voortrekkerstamouers 1835–1845*, 2nd ed. Pretoria: Protea Boekhuis. |
@@ -123,7 +126,8 @@ Cite the paper(s) for each collection you use, and this release.
 Release: Fourie, J., Green, E., et al. (2026). *Cape Historical Data
 Repository*. Zenodo.
 doi:[10.5281/zenodo.23397436](https://doi.org/10.5281/zenodo.23397436)
-(all versions; it resolves to the latest). Version 1.1:
+(all versions; it resolves to the latest). Version 1.2: DOI to be issued on
+release. Version 1.1:
 doi:[10.5281/zenodo.23419842](https://doi.org/10.5281/zenodo.23419842);
 version 1.0: doi:[10.5281/zenodo.23397437](https://doi.org/10.5281/zenodo.23397437).
 Each version has its own DOI on Zenodo; cite the one you used.
@@ -170,6 +174,8 @@ LICENSE              CC BY 4.0 (data); LICENSE-code: MIT (code and examples)
 
 ## Versions
 
+- **1.2** (4 November 2026): withholds the SAF genealogies. All other files
+  are unchanged from 1.1.
 - **1.1** (16 October 2026; doi:10.5281/zenodo.23419842): adds the runaway advertisements, the 1779 petition,
   the Voortrekker register, the almanac directories and the auction prices, and a further paper to cite for the
   opgaaf, emancipation and SAF collections. The 1.0 data files are unchanged.

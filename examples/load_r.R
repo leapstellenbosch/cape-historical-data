@@ -45,15 +45,6 @@ claims <- ema |>
   add_count(lbs_claim_number, name = "n_amounts")
 filter(claims, n_amounts > 1)
 
-# ---- SAF genealogies ----
-persons <- read_csv("data/saf/saf_persons.csv", guess_max = Inf)
-marriages <- read_csv("data/saf/saf_marriages.csv", guess_max = Inf)
-# Each person's parents' marriage. A few codes are shared by two people
-# (see id_flag), so a code can match more than one marriage.
-persons |>
-  left_join(select(marriages, spouse_code, parents_marriage_year = marriage_year),
-            by = c("mother_spouse_code" = "spouse_code"), relationship = "many-to-many")
-
 # ---- Probate inventories and auction rolls (XML) ----
 # One row per document: reference, date and deceased
 read_documents <- function(file) {

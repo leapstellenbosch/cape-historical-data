@@ -22,8 +22,7 @@ main <- tribble(
   "opgaaf",       "opgaaf_tax_units",         325628, "opgaaf_variables.csv",       "chdr_id",
   "opgaaf",       "opgaaf_entries",           15501,  "opgaaf_variables.csv",       "chdr_id",
   "emancipation", "emancipation_persons",     36417,  "emancipation_variables.csv", "chdr_id",
-  "saf",          "saf_persons",              213953, "saf_variables.csv",          "chdr_id",
-  "saf",          "saf_marriages",            153568, "saf_variables.csv",          "chdr_id",
+  # SAF (saf_persons 213,953; saf_marriages 153,568) withheld since version 1.2
   "runaways",     "runaways_persons",         881,    "runaways_variables.csv",     "chdr_id",
   "prices",       "prices_goods",             30,     "prices_variables.csv",       "good",
   "prices",       "prices_annual",            2259,   "prices_variables.csv",       "year,good",
@@ -97,22 +96,12 @@ check("opgaaf", "every opgaaf variable is in the tables",
       all(read_csv(file.path(data_dir, "opgaaf", "opgaaf_variables.csv"), show_col_types = FALSE)$variable %in%
             c(names(units), names(entries))))
 
-persons <- tables$saf_persons; marriages <- tables$saf_marriages
-check("saf", "nobody in saf_persons born or baptised after 1870",
-      !any(persons$birth_year > 1870 & persons$birth_year <= 2014, na.rm = TRUE) &&
-        !any(is.na(persons$birth_year) & persons$baptism_year > 1870 & persons$baptism_year <= 2014, na.rm = TRUE))
-check("saf", "no published spouse born after 1870",
-      !any(marriages$spouse_birth_year > 1870 & marriages$spouse_birth_year <= 2014, na.rm = TRUE))
-check("saf", "every person has an inclusion basis", !anyNA(persons$inclusion_basis))
-missing_principal <- sum(!marriages$principal_chdr_id %in% persons$chdr_id)
-check("saf", "marriages without a published principal (principal born after 1870): 2,879, as the README states",
-      missing_principal == 2879, missing_principal)
-# Not a pass/fail check: reported under "Notes"
-born_to <- na.omit(persons$mother_spouse_code)
-notes <- sprintf("SAF: %.1f%% of the %s persons with a `mother_spouse_code` have their parents' marriage in `saf_marriages`; the rest point to marriages that are not in the sheet or not in the release.",
-                 100 * mean(born_to %in% marriages$spouse_code), format(length(born_to), big.mark = ","))
-check("saf", "variable list covers both tables exactly",
-      nrow(read_csv(file.path(data_dir, "saf", "saf_variables.csv"), show_col_types = FALSE)) == ncol(persons) + ncol(marriages))
+# The SAF checks (cutoff, inclusion basis, 2,879 marriages without a published
+# principal, variable list) are suspended while the collection is withheld
+# (version 1.2); see the 1.1 release's copy of this script.
+check("all", "the withheld SAF collection is not in the release",
+      !dir.exists(file.path(data_dir, "saf")) && !dir.exists(file.path(rel, "code", "saf")))
+notes <- "The South African Families genealogies (versions 1.0 and 1.1) are withheld from this version."
 
 ema <- tables$emancipation_persons
 check("emancipation", "valuations below 300 and not negative",

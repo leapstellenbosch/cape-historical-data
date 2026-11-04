@@ -3,8 +3,12 @@
 # .zenodo.json) and by 03_datapackage.R. release/references.bib holds the same
 # works in BibTeX and is kept by hand.
 
-release_version <- "1.1"
-release_date <- "2026-10-16"   # set to the day the GitHub release is published
+release_version <- "1.2"
+release_date <- "2026-11-04"   # set to the day the GitHub release is published
+
+# Version 1.2 withholds the SAF genealogies (Johan, 4 Nov 2026; see the
+# decision ledger). Their works, archival source and creator (McCants, an
+# author of the SAF paper only) are left out until the collection returns.
 
 # Creators: the authors of the collection papers (Johan, 13 Oct 2026): Fourie
 # and Green first, then alphabetical by full surname, particles included.
@@ -25,7 +29,6 @@ creators <- tribble(
   "Links",       NA,         "Calumet",      "Stellenbosch University",
   "Martin",      NA,         "Lisa-Cheree",  "Stellenbosch University",
   "Martins",     NA,         "Igor",         "Lund University",
-  "McCants",     NA,         "Anne E.",      "Massachusetts Institute of Technology",
   "Pretorius",   NA,         "Jan-Hendrik",  "Stellenbosch University",
   "Rijpma",      NA,         "Auke",         "Utrecht University",
   "Ross",        NA,         "Robert",       "Stellenbosch University; Leiden University",
@@ -61,13 +64,8 @@ works <- list(
        title = "Auction records, consumer culture and social networks in the Cape Colony, 1701-1825",
        journal = "South African Journal of Cultural History", year = 2025, volume = 39, issue = 1, start = 27, end = 49,
        doi = "10.54272/sach.2025.v39n1a2"),
-  list(key = "Cilliers2021", coll = "saf", role = "paper", type = "article", authors = a("Cilliers, Jeanne"),
-       title = "The South African Families database", journal = "Historical Life Course Studies", year = 2021,
-       volume = 11, start = 97, end = 111, doi = "10.51964/hlcs11095"),
-  list(key = "CilliersEtAl2025", coll = "saf", role = "paper", type = "article",
-       authors = a("Cilliers, Jeanne", "Green, Erik", "McCants, Anne E.", "Rijpma, Auke"),
-       title = "Wealth and marriage at the Cape: consanguineous unions as a strategy", journal = "The History of the Family",
-       year = 2025, volume = 30, issue = 2, start = 258, end = 284, doi = "10.1080/1081602X.2025.2478381"),
+  # SAF (withheld since 1.2): Cilliers (2021), Historical Life Course Studies 11: 97-111, doi 10.51964/hlcs11095;
+  # Cilliers, Green, McCants and Rijpma (2025), The History of the Family 30(2): 258-284, doi 10.1080/1081602X.2025.2478381
   list(key = "EkamaEtAl2021", coll = "emancipation", role = "paper", type = "article",
        authors = a("Ekama, Kate", "Fourie, Johan", "Heese, Hans", "Martin, Lisa-Cheree"),
        title = "When Cape slavery ended: Introducing a new slave emancipation dataset",
@@ -132,7 +130,9 @@ archives <- list(
              "Nationaal Archief, The Hague, archive of the Dutch East India Company (VOC), 1.04.02, Overgekomen brieven en papieren (Cape), inv. nos 3994-4276, for returns not preserved in Cape Town"),
   emancipation = c("WCARS, Slave Office (SO, inventory 1/21): SO 20, Slave Compensation Office (valuation lists by district, e.g. SO 20/10 for Graaff-Reinet), and SO 6, registers of slaves",
                    "The National Archives (UK), T 71, Office of Registry of Colonial Slaves and Slave Compensation Commission, via the Legacies of British Slavery database (compensation awards)"),
-  saf = c("Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices in estate files (at WCARS, MOOC 6/9)"),
+  # saf (withheld since 1.2): Genealogical Institute of South Africa (GISA), Suid-Afrikaanse Geslagsregisters, compiled from
+  # Dutch Reformed Church baptism and marriage registers, court marriage records (card index at WCARS), and death notices
+  # in estate files (at WCARS, MOOC 6/9)
   probate = c("WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 8/1-8/48, inventories, general series, 1673-1834; MOOC 8/49-8/74, inventories and appraisements, 1780-1834; MOOC 8/75, unbound inventories, 1673-1825"),
   auctions = c("WCARS, Master of the Orphan Chamber (MOOC, inventory 1/3): MOOC 10/1-10/47, vendue rolls, 1691-1834, and an index to the vendue rolls (MOOC 10/48, loose rolls, is not included)"),
   prices = c("WCARS, Master of the Orphan Chamber, vendue rolls MOOC 10/2-10/24 and 10/26 (1718-1813)"),

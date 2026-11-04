@@ -9,7 +9,9 @@ old <- setdiff(list.files(dest, full.names = TRUE, all.files = TRUE, no.. = TRUE
                file.path(dest, "README.md"))
 unlink(old, recursive = TRUE)
 
-for (part in c("opgaaf", "emancipation", "saf", "runaways", "prices", "petition1779",
+# "saf" is left out while the SAF genealogies are withheld (version 1.2);
+# its code stays in pipeline/saf/.
+for (part in c("opgaaf", "emancipation", "runaways", "prices", "petition1779",
                "voortrekkers", "almanacs", "xml", "package")) {
   files <- list.files(here("pipeline", part), pattern = "[.](R|md|ps1)$")
   dir.create(file.path(dest, part), showWarnings = FALSE)

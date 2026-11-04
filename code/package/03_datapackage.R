@@ -173,7 +173,8 @@ add(parquet_resource("data/opgaaf/opgaaf_tax_units.parquet", "opgaaf-tax-units-p
 add(parquet_resource("data/opgaaf/opgaaf_entries.parquet", "opgaaf-entries-parquet", "opgaaf_entries.csv", "opgaaf"))
 
 # ---------------------------------------------------------------------------
-# Emancipation and SAF
+# Emancipation (the SAF resources are withheld since version 1.2; see the 1.1
+# release's copy of this script)
 # ---------------------------------------------------------------------------
 ema_vars <- read_any("data/emancipation/emancipation_variables.csv")
 add(table_resource("data/emancipation/emancipation_persons.csv", "emancipation-persons",
@@ -187,21 +188,6 @@ add(table_resource("data/emancipation/emancipation_variables.csv", "emancipation
                    "Emancipation variable list", "Every variable of emancipation_persons, its source column and meaning.",
                    "emancipation", ema_vars, var_list_desc, primary_key = "variable"))
 add(parquet_resource("data/emancipation/emancipation_persons.parquet", "emancipation-persons-parquet", "emancipation_persons.csv", "emancipation"))
-
-saf_vars <- read_any("data/saf/saf_variables.csv")
-add(table_resource("data/saf/saf_persons.csv", "saf-persons", "SAF persons",
-                   "One row per person born up to 1870 in the South African Families genealogical database (version of 10 February 2014).",
-                   "saf", nanoparquet::read_parquet(d("saf", "saf_persons.parquet")),
-                   named(filter(saf_vars, table == "saf_persons")), primary_key = "chdr_id"))
-add(table_resource("data/saf/saf_marriages.csv", "saf-marriages", "SAF marriages",
-                   "One row per marriage of a principal, with the spouse's details (withheld where the spouse was born after 1870). principal_chdr_id is absent from saf_persons for 2,879 marriages whose principal was born after 1870.",
-                   "saf", nanoparquet::read_parquet(d("saf", "saf_marriages.parquet")),
-                   named(filter(saf_vars, table == "saf_marriages")), primary_key = "chdr_id"))
-add(table_resource("data/saf/saf_variables.csv", "saf-variables", "SAF variable list",
-                   "Every variable of saf_persons and saf_marriages, its source column and meaning.",
-                   "saf", saf_vars, var_list_desc, primary_key = list("table", "variable")))
-add(parquet_resource("data/saf/saf_persons.parquet", "saf-persons-parquet", "saf_persons.csv", "saf"))
-add(parquet_resource("data/saf/saf_marriages.parquet", "saf-marriages-parquet", "saf_marriages.csv", "saf"))
 
 # ---------------------------------------------------------------------------
 # Collections added in version 1.1
@@ -329,9 +315,10 @@ pkg <- list(
   version = release_version,
   description = paste(
     "Records on the Cape Colony, 1660-1891, released by LEAP (Laboratory for the Economics of Africa's Past), Stellenbosch University:",
-    "cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records, the South African Families genealogies (people born up to 1870),",
+    "cleaned tables of the opgaaf tax censuses (1660-1844, ten districts), the 1834 slave emancipation records,",
     "runaway slave advertisements (1830-1842), the 1779 Cape Patriots petition, the Voortrekker register and the Cape almanac directories (1813-1891);",
     "yearly prices of goods sold at estate auctions (1718-1813); and the transcription XML of the Orphan Chamber probate inventories (MOOC8) and estate auction rolls (MOOC10).",
+    "The South African Families genealogies published in versions 1.0 and 1.1 are withheld from this version.",
     "Users must cite the paper(s) for each collection they use (each resource's sources) and this release.",
     "Licence CC BY 4.0, except the runaway advertisements (CC BY-NC-SA 4.0, the licence of their original deposit).",
     "Most of the records are transcriptions of documents held by the Western Cape Archives and Records Service, Cape Town (opgaafrollen, series J; Slave Office, SO 6 and SO 20; Master of the Orphan Chamber, MOOC 8 and MOOC 10; Council of Policy, C 2665), with early tax returns from the Nationaal Archief, The Hague (VOC archive, 1.04.02); the README lists the archival source of each collection.",

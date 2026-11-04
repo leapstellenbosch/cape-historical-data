@@ -1,7 +1,7 @@
 # Code
 
 The R code that made the published files, for transparency. It reads the
-source files (the transcribers' opgaaf workbooks, the SAF, emancipation,
+source files (the transcribers' opgaaf workbooks, the emancipation,
 price, petition and Voortrekker workbooks, the almanac database,
 the runaway files of the Dataverse deposit and the original MOOC XML files),
 which are not part of this release, so it cannot be rerun from the repository
@@ -12,7 +12,6 @@ what it does and asserts its checks as it runs.
 |---|---|
 | `opgaaf/` | `data/opgaaf/`. `run_opgaaf.R` runs stages `00`–`07` (about 35 minutes). Stages `00`–`06` are LEAP's internal release pipeline of 25 September 2026 (labelled "v2" in the code), changed only in file paths; stage `07_public_release.R` assigns the `chdr_id` identifiers, leaves out redundant columns and writes the public files; `08_archival_references.R` writes `opgaaf_archival_references.csv` from the transcribers' indexes. |
 | `emancipation/` | `data/emancipation/` |
-| `saf/` | `data/saf/` |
 | `runaways/` | `data/runaways/`, from the two CSV files of the Harvard Dataverse deposit |
 | `prices/` | `data/prices/`, from the authors' price workbook; checks every auction against the MOOC10 XML |
 | `petition1779/` | `data/petition1779/` |
