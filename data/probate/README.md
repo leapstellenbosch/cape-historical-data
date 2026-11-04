@@ -17,7 +17,7 @@ clerks.
 Measurements from eighteenth-century probate inventories", *Economic History
 Review* 66(2): 419–448,
 doi:[10.1111/j.1468-0289.2012.00662.x](https://doi.org/10.1111/j.1468-0289.2012.00662.x);
-**and** McCants, A. E., Fourie, J. and Walters, L. (2026), "Selection in
+**and** Fourie, J., McCants, A. E. and Walters, L. (2026), "Selection in
 probate inventories", paper presented at the African Economic History Network
 annual meeting, Gothenburg, October 2026.
 

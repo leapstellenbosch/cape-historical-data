@@ -189,10 +189,10 @@ references:
 - type: conference-paper
   title: Selection in probate inventories
   authors:
-  - family-names: McCants
-    given-names: Anne E.
   - family-names: Fourie
     given-names: Johan
+  - family-names: McCants
+    given-names: Anne E.
   - family-names: Walters
     given-names: Leoné
   conference:
