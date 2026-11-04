@@ -126,8 +126,9 @@ Cite the paper(s) for each collection you use, and this release.
 Release: Fourie, J., Green, E., et al. (2026). *Cape Historical Data
 Repository*. Zenodo.
 doi:[10.5281/zenodo.23397436](https://doi.org/10.5281/zenodo.23397436)
-(all versions; it resolves to the latest). Version 1.2: DOI to be issued on
-release. Version 1.1:
+(all versions; it resolves to the latest). Version 1.2:
+doi:[10.5281/zenodo.23935169](https://doi.org/10.5281/zenodo.23935169);
+version 1.1:
 doi:[10.5281/zenodo.23419842](https://doi.org/10.5281/zenodo.23419842);
 version 1.0: doi:[10.5281/zenodo.23397437](https://doi.org/10.5281/zenodo.23397437).
 Each version has its own DOI on Zenodo; cite the one you used.
@@ -174,8 +175,8 @@ LICENSE              CC BY 4.0 (data); LICENSE-code: MIT (code and examples)
 
 ## Versions
 
-- **1.2** (4 November 2026): withholds the SAF genealogies. All other files
-  are unchanged from 1.1.
+- **1.2** (4 November 2026; doi:10.5281/zenodo.23935169): withholds the SAF
+  genealogies. All other files are unchanged from 1.1.
 - **1.1** (16 October 2026; doi:10.5281/zenodo.23419842): adds the runaway advertisements, the 1779 petition,
   the Voortrekker register, the almanac directories and the auction prices, and a further paper to cite for the
   opgaaf, emancipation and SAF collections. The 1.0 data files are unchanged.
