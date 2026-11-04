@@ -25,8 +25,8 @@ when they probably describe the same person.
 The SAF genealogies (South African Families database, people born up to 1870)
 that versions 1.0 and 1.1 included are withheld from this version. Their
 record identifiers (`SAF-000007`) are reserved and will be carried over if the
-collection returns. The earlier versions remain available on Zenodo under
-their own DOIs.
+collection returns. The files of versions 1.0 and 1.1 have been withdrawn
+from Zenodo and GitHub; their DOIs resolve to citation records without files.
 
 Each collection's folder in `data/` has a `README.md` that explains what the
 records are, how they were cleaned and what to watch for, and a variable or
@@ -130,7 +130,8 @@ doi:[10.5281/zenodo.23397436](https://doi.org/10.5281/zenodo.23397436)
 doi:[10.5281/zenodo.23935169](https://doi.org/10.5281/zenodo.23935169);
 version 1.1:
 doi:[10.5281/zenodo.23419842](https://doi.org/10.5281/zenodo.23419842);
-version 1.0: doi:[10.5281/zenodo.23397437](https://doi.org/10.5281/zenodo.23397437).
+version 1.0: doi:[10.5281/zenodo.23397437](https://doi.org/10.5281/zenodo.23397437)
+(the files of 1.0 and 1.1 were withdrawn on 4 November 2026).
 Each version has its own DOI on Zenodo; cite the one you used.
 
 BibTeX entries for the papers and sources are in `references.bib`; GitHub's
